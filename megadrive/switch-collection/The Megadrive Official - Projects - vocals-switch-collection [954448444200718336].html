@@ -1,0 +1,289 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Megadrive Official - vocals-switch-collection</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <link href="styles.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-light.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.pre--multiline').forEach(e => hljs.highlightBlock(e));
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.8.1/lottie.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.chatlog__sticker--media[data-source]').forEach(e => {
+                const imageDataUrl = e.getAttribute('data-source');
+
+                const anim = lottie.loadAnimation({
+                  container: e,
+                  renderer: 'svg',
+                  loop: true,
+                  autoplay: true,
+                  path: imageDataUrl
+                });
+
+                anim.addEventListener('data_failed', () =>
+                    e.innerHTML = '<strong>[Sticker cannot be rendered]</strong>'
+                );
+            });
+        });
+    </script>
+
+    <script>
+        function scrollToMessage(event, id) {
+            var element = document.getElementById('message-' + id);
+
+            if (element) {
+                event.preventDefault();
+
+                element.classList.add('chatlog__message--highlighted');
+
+                window.scrollTo({
+                    top: element.getBoundingClientRect().top - document.body.getBoundingClientRect().top - (window.innerHeight / 2),
+                    behavior: 'smooth'
+                });
+
+                window.setTimeout(function() {
+                    element.classList.remove('chatlog__message--highlighted');
+                }, 2000);
+            }
+        }
+
+        function showSpoiler(event, element) {
+            if (element && element.classList.contains('spoiler-text--hidden')) {
+                event.preventDefault();
+                element.classList.remove('spoiler-text--hidden');
+            }
+            if (element && element.classList.contains('chatlog__attachment--hidden')) {
+                event.preventDefault();
+                element.classList.remove('chatlog__attachment--hidden');
+            }
+        }
+    </script>
+
+    <svg style="display: none">
+        <symbol id="icon-attachment" viewBox="0 0 720 960">
+            <path fill="#f4f5fb" d="M50,935a25,25,0,0,1-25-25V50A25,25,0,0,1,50,25H519.6L695,201.32V910a25,25,0,0,1-25,25Z" />
+            <path fill="#7789c4" d="M509.21,50,670,211.63V910H50V50H509.21M530,0H50A50,50,0,0,0,0,50V910a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50h0V191Z" />
+            <path fill="#f4f5fb" d="M530,215a25,25,0,0,1-25-25V50a25,25,0,0,1,16.23-23.41L693.41,198.77A25,25,0,0,1,670,215Z" />
+            <path fill="#7789c4" d="M530,70.71,649.29,190H530V70.71M530,0a50,50,0,0,0-50,50V190a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50Z" />
+        </symbol>
+    </svg>
+</head>
+<body>
+
+<div class="preamble">
+    <div class="preamble__guild-icon-container">
+        <img class="preamble__guild-icon" src="https://cdn.discordapp.com/icons/954278342880792586/20e3116c40fec860123400d45158217e.png" alt="Guild icon" loading="lazy">
+    </div>
+    <div class="preamble__entries-container">
+        <div class="preamble__entry">The Megadrive Official</div>
+        <div class="preamble__entry">Projects / vocals-switch-collection</div>
+
+
+    </div>
+</div>
+
+<div class="chatlog">
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/163191503957524480/dbaeaf8e49124e5d1ee07cdac89b753c.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="VocalFan#4987" data-user-id="163191503957524480" style="color: rgb(26,188,156)">VocalFan</span>
+
+
+        <span class="chatlog__timestamp">20-Mar-22 03:58 AM</span>
+
+            <div class="chatlog__message " data-message-id="954869048443809792" id="message-954869048443809792" title="Message sent: 20-Mar-22 03:58 AM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><strong>Team Drive | VocalFan&#39;s Nintendo-Switch Collection! | DLC, Games, AMIIBOs.</strong>
+(<a href="https://drive.google.com/drive/folders/1X_necVkGCbJedKBNvJE5894t2McEAKeH?usp=sharing">https://drive.google.com/drive/folders/1X_necVkGCbJedKBNvJE5894t2McEAKeH?usp=sharing</a>)
+-------------------------------------------------------------------------------------------------------------------
+To request a Firmware, DLC, Update, or Game, please @ me in <span class="mention">#requests</span> with the file you want! I&#39;ll get to it as fast as I can!</span>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="star">
+                                <img class="emoji emoji--small" alt="⭐" src="https://twemoji.maxcdn.com/2/svg/2b50.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">7</span>
+                            </div>
+                    </div>
+            </div>
+            <div class="chatlog__message " data-message-id="954869108955054132" id="message-954869108955054132" title="Message sent: 20-Mar-22 03:58 AM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><strong>HOW TO USE &#39;Ryujinx&#39; FOR SWITCH EMULATION:</strong>
+- Download Ryujinx from here: <a href="https://ryujinx.org/download">https://ryujinx.org/download</a>
+- When completed, use your Switch Keys or get them from the <span class="mention">#exclusive-content</span> channel. Nintendo often takes down Key sources, so you probably won&#39;t find them online.
+- When downloaded, put your prod.keys file in the folder path: %appdata%\Ryujinx\system\
+- Also make sure to install the firmware! You can download them from the SWITCH FIRMWARE folder in the Drive, then go to Ryujinx, then Tools, then press Install a Firmware from XCI or ZIP. and select the zip file!
+- How to install NSPs and XCIs: You don&#39;t have to install them! Just make sure they&#39;re in a folder, then go to Ryujinx, then in the top left, go to: Option -&gt; Settings. Then press Add under Game Directories , select your folder with the games!
+- Have fun!</span>
+
+                        </div>
+                    </div>
+
+
+                        <div class="chatlog__embed">
+                                <div class="chatlog__embed-color-pill chatlog__embed-color-pill--default"></div>
+
+                            <div class="chatlog__embed-content-container">
+                                <div class="chatlog__embed-content">
+                                    <div class="chatlog__embed-text">
+
+                                            <div class="chatlog__embed-title">
+                                                    <a class="chatlog__embed-title-link" href="https://ryujinx.org/download">
+                                                        <div class="markdown preserve-whitespace">Ryujinx - Download</div>
+                                                    </a>
+                                            </div>
+
+                                            <div class="chatlog__embed-description">
+                                                <div class="markdown preserve-whitespace">Ryujinx is an open source Nintendo Switch emulator written in C# for Windows, Linux and macOS.</div>
+                                            </div>
+
+                                    </div>
+
+                                        <div class="chatlog__embed-thumbnail-container">
+                                            <a class="chatlog__embed-thumbnail-link" href="https://images-ext-2.discordapp.net/external/ks8518oFS0_Ue3qW3L8Gszef57oSCIfftk5wZjuS2ms/https/ryujinx.org/public/logo.png">
+                                                <img class="chatlog__embed-thumbnail" src="https://images-ext-2.discordapp.net/external/ks8518oFS0_Ue3qW3L8Gszef57oSCIfftk5wZjuS2ms/https/ryujinx.org/public/logo.png" alt="Thumbnail" loading="lazy">
+                                            </a>
+                                        </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+            </div>
+            <div class="chatlog__message " data-message-id="954869249736839168" id="message-954869249736839168" title="Message sent: 20-Mar-22 03:59 AM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace">(For NSZ files, please use Switch Army Knife to unzip them! Tool is included in the collection)</span>
+
+                        </div>
+                    </div>
+
+
+
+
+            </div>
+            <div class="chatlog__message " data-message-id="954869327432130590" id="message-954869327432130590" title="Message sent: 20-Mar-22 03:59 AM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><div class="pre pre--multiline nohighlight">Current Files:
+- 724 Amiibos
+- SWITCH FIRMWARES
+Games:
+- A Hat in Time
+- Animal Crossing New Horizons
+- Bayonetta
+- Bayonetta 2
+- Crysis 3 Remastered
+- Dead Cells
+- Deemo
+- Deemo -Reborn-
+- Deltarune Chapter 1
+- Doki Doki Literature Club Plus
+- DOOM Eternal
+- Dying Light: Platinum Edition
+- Fate EXTELLA LINK / Fate EXTELLA The Umbral Star
+- Fire Emblem The Three Houses
+- Game Builder Garage
+- Game Dev Tycoon
+- GhostRunner
+- Golf Story
+- Groove Coaster Wai Wai Party!!!!
+- GTA The Trilogy (GTA III, SAN ANDREAS, VICE CITY)
+- Hades
+- Harvest Moon: Light of Hope - Special Edition
+- Hatsune Miku: Project Diva - MegaMix
+- Hyrule Warriors: Age of Calamity
+- Luigi&#39;s Mansion 3
+- Mad Rat Dead
+- Mario and Sonic at the Olympic Games Tokyo 2020
+- Mario Golf Super Rush
+- Mario Kart 8 Deluxe
+- Mario Party Superstars
+- Mario Tennis Aces
+- Metroid Dread
+- Mighty Gunvolt Burst
+- Monster Hunter Rise
+- Monster Hunter Stories 2: Wings of Ruin
+- Mortal Kombat 11
+- Need For Speed Hot Pursuit - Remastered
+- Neon Abyss
+- New Pokemon Snap
+- Nickelodeon All-Star Brawl
+- Paper Mario: The Origami King
+- Part Time UFO
+- Persona 5 Scramble + English Mod
+- Pokemon Brilliant Diamond
+- Pokemon Legends: Arceus
+- Pokemon Shield
+- Pokemon Sword
+- Serious Sam Collection
+- SHIN MEGAMI TENSEI V
+- Sonic Mania Plus
+- Stardew Valley
+- Super Mario 3D All-Stars
+- Super Mario 3D World + Bowser&#39;s Fury
+- Super Mario Maker 2
+- Super Mario Odyssey
+- Super Mario Party
+- Super Smash Bros Ultimate
+- Taiko no Tatsujin - Drum n Fun
+- The Great Ace Attorney Chronicles
+- The Legend Of Zelda - Breath Of The Wild
+- The Legend Of Zelda - Link&#39;s Awakening
+- The Legend of Zelda - Skyward Sword HD
+- Tokyo Mirage Sessions - FE Encore
+- Tony Hawks Pro Skater 1+2
+- Touhou Spell Bubble
+- Undertale
+- Warioware: Get It Together!
+- Yu-Gi-Oh RUSH DUEL Dawn of the Battle Royale</div></span>
+
+                        </div>
+                    </div>
+
+
+
+
+            </div>
+    </div>
+</div>
+
+
+</div>
+
+<div class="postamble">
+    <div class="postamble__entry">Exported 4 message(s)</div>
+</div>
+
+</body>
+
+</html>

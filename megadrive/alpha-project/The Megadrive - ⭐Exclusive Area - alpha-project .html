@@ -1,0 +1,1597 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Megadrive - alpha-project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="styles.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-light.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.pre--multiline').forEach(block => hljs.highlightBlock(block));
+        });
+    </script>
+
+    <script>
+        function scrollToMessage(event, id) {
+            var element = document.getElementById('message-' + id);
+
+            if (element) {
+                event.preventDefault();
+
+                element.classList.add('chatlog__message--highlighted');
+
+                window.scrollTo({
+                    top: element.getBoundingClientRect().top - document.body.getBoundingClientRect().top - (window.innerHeight / 2),
+                    behavior: 'smooth'
+                });
+
+                window.setTimeout(function() {
+                    element.classList.remove('chatlog__message--highlighted');
+                }, 2000);
+            }
+        }
+
+        function showSpoiler(event, element) {
+            if (element && element.classList.contains('spoiler-text--hidden')) {
+                event.preventDefault();
+                element.classList.remove('spoiler-text--hidden');
+            }
+            if (element && element.classList.contains('chatlog__attachment--hidden')) {
+                event.preventDefault();
+                element.classList.remove('chatlog__attachment--hidden');
+            }
+        }
+    </script>
+
+    <svg style="display: none">
+        <symbol id="icon-attachment" viewBox="0 0 720 960">
+            <path fill="#f4f5fb" d="M50,935a25,25,0,0,1-25-25V50A25,25,0,0,1,50,25H519.6L695,201.32V910a25,25,0,0,1-25,25Z" />
+            <path fill="#7789c4" d="M509.21,50,670,211.63V910H50V50H509.21M530,0H50A50,50,0,0,0,0,50V910a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50h0V191Z" />
+            <path fill="#f4f5fb" d="M530,215a25,25,0,0,1-25-25V50a25,25,0,0,1,16.23-23.41L693.41,198.77A25,25,0,0,1,670,215Z" />
+            <path fill="#7789c4" d="M530,70.71,649.29,190H530V70.71M530,0a50,50,0,0,0-50,50V190a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50Z" />
+        </symbol>
+    </svg>
+</head>
+<body>
+
+<div class="preamble">
+    <div class="preamble__guild-icon-container">
+        <img class="preamble__guild-icon" src="https://cdn.discordapp.com/icons/740572537595101194/3e2b8676ff732c6a44ae9ed021d247c4.png" alt="Guild icon" loading="lazy">
+    </div>
+    <div class="preamble__entries-container">
+        <div class="preamble__entry">The Megadrive</div>
+        <div class="preamble__entry">⭐Exclusive Area / alpha-project</div>
+
+            <div class="preamble__entry preamble__entry--small">The Alpha Project
+
+This channel features an exclusive catalogue of data scrapes and collections, in an effort of digital liberation. These are large scale data sets for true data hoarders - and are exclusive to The Megadrive community. Many are not available anywhere else.
+
+If you&#39;d like to share any of these files, please ensure you create your own copies first. DO NOT use these links directly. We will find you.
+
+To contribute to this channel, you can get in touch with @Xavy</div>
+
+    </div>
+</div>
+
+<div class="chatlog">
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/712418738900566036/eff53e1b5b6291198fb7c99a636fecc9.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="Cyclicism#5413" data-user-id="712418738900566036" style="color: rgb(241,196,15)">Cyclicism &#127913;</span>
+
+
+        <span class="chatlog__timestamp">21-Apr-21 09:06 PM</span>
+
+            <div class="chatlog__message chatlog__message--pinned" data-message-id="834452564493729823" id="message-834452564493729823" title="Message sent: 21-Apr-21 09:06 PM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><span class="pre pre--inline">The Alpha Project</span>
+
+This channel features an exclusive catalogue of data scrapes and collections, in an effort of digital liberation. These are large scale data sets for true data hoarders - and are exclusive to The Megadrive community. Many are not available anywhere else.
+
+If you&#39;d like to share any of these files, please ensure you create your own copies first. DO NOT use these links directly. We will find you.
+
+To contribute to this channel, you can get in touch with <span class="mention" title="Xavy#1083">@Xavy</span>.</span>
+
+                                <span class="chatlog__edited-timestamp" title="21-Apr-21 09:23 PM">(edited)</span>
+                        </div>
+                    </div>
+
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="fire">
+                                <img class="emoji emoji--small" alt="&#128293;" src="https://twemoji.maxcdn.com/2/svg/1f525.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">8</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/396936659696091138/ce9193802c36e54f7e18abca278cb960.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="Xavy#1083" data-user-id="396936659696091138" style="color: rgb(209,69,97)">Xavy</span>
+
+
+        <span class="chatlog__timestamp">21-Apr-21 09:19 PM</span>
+
+            <div class="chatlog__message " data-message-id="834455769616351273" id="message-834455769616351273" title="Message sent: 21-Apr-21 09:19 PM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><div class="quote"><img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png">  <strong>[Alpha 1]</strong>  1080p Movies Collection from Biology drive
+</div>&gt; 
+<div class="quote"><a href="https://drive.google.com/drive/folders/1pxnUkGDRgjQV3Rf65rPZixn6qKfJ8A4g?usp=sharing">https://drive.google.com/drive/folders/1pxnUkGDRgjQV3Rf65rPZixn6qKfJ8A4g?usp=sharing</a>
+</div>&gt; 
+<div class="quote"><em>(this is an uncompleted project because they closed their drives faster than i think. but you can find many interesting stuff here)</em></div></span>
+
+                                <span class="chatlog__edited-timestamp" title="21-Apr-21 09:20 PM">(edited)</span>
+                        </div>
+                    </div>
+
+                    <div class="chatlog__attachment " onclick="">
+
+                            <a href="https://cdn.discordapp.com/attachments/834308167017168926/834455769671794698/unknown.png">
+                                <img class="chatlog__attachment-media" src="https://cdn.discordapp.com/attachments/834308167017168926/834455769671794698/unknown.png" alt="Image attachment" title="Image: unknown.png (4,16 KB)" loading="lazy">
+                            </a>
+                    </div>
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="fire">
+                                <img class="emoji emoji--small" alt="&#128293;" src="https://twemoji.maxcdn.com/2/svg/1f525.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">4</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/396936659696091138/ce9193802c36e54f7e18abca278cb960.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="Xavy#1083" data-user-id="396936659696091138" style="color: rgb(209,69,97)">Xavy</span>
+
+
+        <span class="chatlog__timestamp">22-Apr-21 07:59 PM</span>
+
+            <div class="chatlog__message " data-message-id="834798060763611198" id="message-834798060763611198" title="Message sent: 22-Apr-21 07:59 PM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><div class="quote"><img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png">  <strong>[Alpha 2]</strong> Movie Collection 1
+</div>&gt; 
+<div class="quote"><a href="https://drive.google.com/drive/folders/1x5CmP_lyz8E6zztRe683idayVKKGsHiJ?usp=sharing">https://drive.google.com/drive/folders/1x5CmP_lyz8E6zztRe683idayVKKGsHiJ?usp=sharing</a></div></span>
+
+                        </div>
+                    </div>
+
+                    <div class="chatlog__attachment " onclick="">
+
+                            <a href="https://cdn.discordapp.com/attachments/834308167017168926/834798061280034816/unknown.png">
+                                <img class="chatlog__attachment-media" src="https://cdn.discordapp.com/attachments/834308167017168926/834798061280034816/unknown.png" alt="Image attachment" title="Image: unknown.png (4,01 KB)" loading="lazy">
+                            </a>
+                    </div>
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="fire">
+                                <img class="emoji emoji--small" alt="&#128293;" src="https://twemoji.maxcdn.com/2/svg/1f525.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">2</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/396936659696091138/ce9193802c36e54f7e18abca278cb960.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="Xavy#1083" data-user-id="396936659696091138" style="color: rgb(209,69,97)">Xavy</span>
+
+
+        <span class="chatlog__timestamp">23-Apr-21 11:41 PM</span>
+
+            <div class="chatlog__message " data-message-id="835216244125728819" id="message-835216244125728819" title="Message sent: 23-Apr-21 11:41 PM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><div class="quote"><img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png">  <strong>[Alpha 3]</strong> Movie Collection 2
+</div>&gt; 
+<div class="quote"><a href="https://drive.google.com/drive/folders/1hh0w6hQx2M-ZtQ3WTQ-5Rf3Xci3hLHRT?usp=sharing">https://drive.google.com/drive/folders/1hh0w6hQx2M-ZtQ3WTQ-5Rf3Xci3hLHRT?usp=sharing</a></div></span>
+
+                        </div>
+                    </div>
+
+                    <div class="chatlog__attachment " onclick="">
+
+                            <a href="https://cdn.discordapp.com/attachments/834308167017168926/835216244574912562/unknown.png">
+                                <img class="chatlog__attachment-media" src="https://cdn.discordapp.com/attachments/834308167017168926/835216244574912562/unknown.png" alt="Image attachment" title="Image: unknown.png (3,86 KB)" loading="lazy">
+                            </a>
+                    </div>
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="thumbsup">
+                                <img class="emoji emoji--small" alt="&#128077;" src="https://twemoji.maxcdn.com/2/svg/1f44d.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">5</span>
+                            </div>
+                            <div class="chatlog__reaction" title="fire">
+                                <img class="emoji emoji--small" alt="&#128293;" src="https://twemoji.maxcdn.com/2/svg/1f525.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/396936659696091138/ce9193802c36e54f7e18abca278cb960.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="Xavy#1083" data-user-id="396936659696091138" style="color: rgb(209,69,97)">Xavy</span>
+
+
+        <span class="chatlog__timestamp">05-May-21 07:19 AM</span>
+
+            <div class="chatlog__message " data-message-id="839317887486787584" id="message-839317887486787584" title="Message sent: 05-May-21 07:19 AM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><em>- note to all fellow data-hoarders. all the stuffs above are stored for limited amount of time. so please make a copy if you can -</em></span>
+
+                                <span class="chatlog__edited-timestamp" title="05-May-21 07:19 AM">(edited)</span>
+                        </div>
+                    </div>
+
+
+
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/396936659696091138/ce9193802c36e54f7e18abca278cb960.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="Xavy#1083" data-user-id="396936659696091138" style="color: rgb(209,69,97)">Xavy</span>
+
+
+        <span class="chatlog__timestamp">05-May-21 10:52 AM</span>
+
+            <div class="chatlog__message " data-message-id="839371559080820736" id="message-839371559080820736" title="Message sent: 05-May-21 10:52 AM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><div class="quote"><img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png">  <strong>[Alpha 4]</strong> Rare Audiobooks Collection <em><strong>(exclusive from <img loading="lazy" class="emoji " alt="🌮" title="taco" src="https://twemoji.maxcdn.com/2/svg/1f32e.svg"> )</strong></em>
+</div>&gt; 
+<div class="quote"><a href="https://drive.google.com/drive/folders/1r-Bul-1imA81ELtwhTOFiYa0HNnPRrqH?usp=sharing">https://drive.google.com/drive/folders/1r-Bul-1imA81ELtwhTOFiYa0HNnPRrqH?usp=sharing</a>
+</div>&gt; 
+<div class="quote">Backup: <a href="https://drive.google.com/drive/folders/1WVHONakfQ0CQ5f4sn5jWv-hJH5ns9BAo?usp=sharing">https://drive.google.com/drive/folders/1WVHONakfQ0CQ5f4sn5jWv-hJH5ns9BAo?usp=sharing</a></div></span>
+
+                                <span class="chatlog__edited-timestamp" title="17-Oct-21 10:56 AM">(edited)</span>
+                        </div>
+                    </div>
+
+                    <div class="chatlog__attachment " onclick="">
+
+                            <a href="https://cdn.discordapp.com/attachments/834308167017168926/839371559126171667/Screen_Shot_2021-05-04_at_9.png">
+                                <img class="chatlog__attachment-media" src="https://cdn.discordapp.com/attachments/834308167017168926/839371559126171667/Screen_Shot_2021-05-04_at_9.png" alt="Image attachment" title="Image: Screen_Shot_2021-05-04_at_9.png (10,1 KB)" loading="lazy">
+                            </a>
+                    </div>
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="taco">
+                                <img class="emoji emoji--small" alt="&#127790;" src="https://twemoji.maxcdn.com/2/svg/1f32e.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">6</span>
+                            </div>
+                            <div class="chatlog__reaction" title="fire">
+                                <img class="emoji emoji--small" alt="&#128293;" src="https://twemoji.maxcdn.com/2/svg/1f525.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/396936659696091138/ce9193802c36e54f7e18abca278cb960.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="Xavy#1083" data-user-id="396936659696091138" style="color: rgb(209,69,97)">Xavy</span>
+
+
+        <span class="chatlog__timestamp">11-May-21 06:49 PM</span>
+
+            <div class="chatlog__message " data-message-id="841665716591001630" id="message-841665716591001630" title="Message sent: 11-May-21 06:49 PM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><div class="quote"><img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png">  <strong>[Alpha 5]</strong> General Collection from SGD group <em><strong>(exclusive | classified)</strong></em>
+</div>&gt; 
+<div class="quote"><a href="https://drive.google.com/drive/folders/1Xn7WpyP5QD9-MjozvJl2euzWbpR62Hey?usp=sharing">https://drive.google.com/drive/folders/1Xn7WpyP5QD9-MjozvJl2euzWbpR62Hey?usp=sharing</a>
+</div>&gt; 
+<div class="quote"><em>(they&#39;re a dead group now and their drive was deleted)</em></div></span>
+
+                        </div>
+                    </div>
+
+                    <div class="chatlog__attachment " onclick="">
+
+                            <a href="https://cdn.discordapp.com/attachments/834308167017168926/841665716624425000/unknown.png">
+                                <img class="chatlog__attachment-media" src="https://cdn.discordapp.com/attachments/834308167017168926/841665716624425000/unknown.png" alt="Image attachment" title="Image: unknown.png (4,22 KB)" loading="lazy">
+                            </a>
+                    </div>
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="fire">
+                                <img class="emoji emoji--small" alt="&#128293;" src="https://twemoji.maxcdn.com/2/svg/1f525.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/396936659696091138/ce9193802c36e54f7e18abca278cb960.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="Xavy#1083" data-user-id="396936659696091138" style="color: rgb(209,69,97)">Xavy</span>
+
+
+        <span class="chatlog__timestamp">11-May-21 07:01 PM</span>
+
+            <div class="chatlog__message " data-message-id="841668886013411379" id="message-841668886013411379" title="Message sent: 11-May-21 07:01 PM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><div class="quote"><img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png">  <strong>[Alpha 6]</strong> FMC Media Backup <em>(from <span class="mention" title="Kush the A++er#8939">@Kush the A++er</span> )</em>
+</div>&gt; 
+<div class="quote"><a href="https://drive.google.com/drive/folders/1a5cTxasp63KrBHNdkYU6oVn_pyHW2ITC?usp=sharing">https://drive.google.com/drive/folders/1a5cTxasp63KrBHNdkYU6oVn_pyHW2ITC?usp=sharing</a></div></span>
+
+                        </div>
+                    </div>
+
+                    <div class="chatlog__attachment " onclick="">
+
+                            <a href="https://cdn.discordapp.com/attachments/834308167017168926/841668886079995914/unknown.png">
+                                <img class="chatlog__attachment-media" src="https://cdn.discordapp.com/attachments/834308167017168926/841668886079995914/unknown.png" alt="Image attachment" title="Image: unknown.png (4,42 KB)" loading="lazy">
+                            </a>
+                    </div>
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="fire">
+                                <img class="emoji emoji--small" alt="&#128293;" src="https://twemoji.maxcdn.com/2/svg/1f525.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                            <div class="chatlog__reaction" title="x">
+                                <img class="emoji emoji--small" alt="❌" src="https://twemoji.maxcdn.com/2/svg/274c.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/396936659696091138/ce9193802c36e54f7e18abca278cb960.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="Xavy#1083" data-user-id="396936659696091138" style="color: rgb(209,69,97)">Xavy</span>
+
+
+        <span class="chatlog__timestamp">27-May-21 12:03 AM</span>
+
+            <div class="chatlog__message " data-message-id="847180644667883591" id="message-847180644667883591" title="Message sent: 27-May-21 12:03 AM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><div class="quote"><img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png">  <strong>[Alpha 7]</strong> 50TB Movies Collection <em><strong>(exclusive)</strong></em>
+<em>(from the famous 50TB Mega collection)</em>
+</div>&gt; 
+<div class="quote"><a href="https://drive.google.com/drive/folders/1WsGPkLsoebDWMZGGvh9PksPIp06t4au6?usp=sharing">https://drive.google.com/drive/folders/1WsGPkLsoebDWMZGGvh9PksPIp06t4au6?usp=sharing</a>
+</div>&gt; 
+<div class="quote">Backup: <a href="https://drive.google.com/drive/folders/1jhTG3BltbaQstjOekgp-nzFsTS6PokU9?usp=sharing">https://drive.google.com/drive/folders/1jhTG3BltbaQstjOekgp-nzFsTS6PokU9?usp=sharing</a></div></span>
+
+                                <span class="chatlog__edited-timestamp" title="17-Oct-21 10:54 AM">(edited)</span>
+                        </div>
+                    </div>
+
+                    <div class="chatlog__attachment " onclick="">
+
+                            <a href="https://cdn.discordapp.com/attachments/834308167017168926/847180644714938378/unknown.png">
+                                <img class="chatlog__attachment-media" src="https://cdn.discordapp.com/attachments/834308167017168926/847180644714938378/unknown.png" alt="Image attachment" title="Image: unknown.png (4,59 KB)" loading="lazy">
+                            </a>
+                    </div>
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="100">
+                                <img class="emoji emoji--small" alt="&#128175;" src="https://twemoji.maxcdn.com/2/svg/1f4af.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">11</span>
+                            </div>
+                            <div class="chatlog__reaction" title="fire">
+                                <img class="emoji emoji--small" alt="&#128293;" src="https://twemoji.maxcdn.com/2/svg/1f525.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">4</span>
+                            </div>
+                            <div class="chatlog__reaction" title="regional_indicator_r">
+                                <img class="emoji emoji--small" alt="&#127479;" src="https://twemoji.maxcdn.com/2/svg/1f1f7.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                            <div class="chatlog__reaction" title="regional_indicator_i">
+                                <img class="emoji emoji--small" alt="&#127470;" src="https://twemoji.maxcdn.com/2/svg/1f1ee.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                            <div class="chatlog__reaction" title="regional_indicator_p">
+                                <img class="emoji emoji--small" alt="&#127477;" src="https://twemoji.maxcdn.com/2/svg/1f1f5.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/396936659696091138/ce9193802c36e54f7e18abca278cb960.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="Xavy#1083" data-user-id="396936659696091138" style="color: rgb(209,69,97)">Xavy</span>
+
+
+        <span class="chatlog__timestamp">27-May-21 08:58 AM</span>
+
+            <div class="chatlog__message " data-message-id="847315217222598677" id="message-847315217222598677" title="Message sent: 27-May-21 08:58 AM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><div class="quote"><img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png"> <strong>[Alpha 8]</strong> 150TB TV-Shows Collection <em><strong>(exclusive)</strong></em>
+<em>(from <span class="mention" title="Crimson#5249">@Omlette</span> 150TB Mega share)</em>
+</div>&gt; 
+<div class="quote"><a href="https://drive.google.com/drive/folders/1bpXWW1tw7LGB2GVLZ_hgkOJGRAoDAsZR?usp=sharing">https://drive.google.com/drive/folders/1bpXWW1tw7LGB2GVLZ_hgkOJGRAoDAsZR?usp=sharing</a>
+</div>&gt; 
+<div class="quote">Backup: <a href="https://drive.google.com/drive/folders/1zxG3C9UdVDwvVfmiOxvTslfHzxbjNaCs?usp=sharing">https://drive.google.com/drive/folders/1zxG3C9UdVDwvVfmiOxvTslfHzxbjNaCs?usp=sharing</a></div></span>
+
+                                <span class="chatlog__edited-timestamp" title="17-Oct-21 10:54 AM">(edited)</span>
+                        </div>
+                    </div>
+
+                    <div class="chatlog__attachment " onclick="">
+
+                            <a href="https://cdn.discordapp.com/attachments/834308167017168926/847315217666146334/unknown.png">
+                                <img class="chatlog__attachment-media" src="https://cdn.discordapp.com/attachments/834308167017168926/847315217666146334/unknown.png" alt="Image attachment" title="Image: unknown.png (4,89 KB)" loading="lazy">
+                            </a>
+                    </div>
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="wink">
+                                <img class="emoji emoji--small" alt="&#128521;" src="https://twemoji.maxcdn.com/2/svg/1f609.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">10</span>
+                            </div>
+                            <div class="chatlog__reaction" title="fire">
+                                <img class="emoji emoji--small" alt="&#128293;" src="https://twemoji.maxcdn.com/2/svg/1f525.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">3</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/396936659696091138/ce9193802c36e54f7e18abca278cb960.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="Xavy#1083" data-user-id="396936659696091138" style="color: rgb(209,69,97)">Xavy</span>
+
+
+        <span class="chatlog__timestamp">28-May-21 12:49 PM</span>
+
+            <div class="chatlog__message " data-message-id="847735822215151646" id="message-847735822215151646" title="Message sent: 28-May-21 12:49 PM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><div class="quote"><img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png">  <strong>[Alpha 9]</strong> Judas Anime Collection <em>(updating)</em>
+(last update: Oct 12)
+</div>&gt; 
+<div class="quote"><a href="https://drive.google.com/drive/folders/1KpUS4HTFv6Hb3vL0m-6wCGZjqeQGxeBz?usp=sharing">https://drive.google.com/drive/folders/1KpUS4HTFv6Hb3vL0m-6wCGZjqeQGxeBz?usp=sharing</a>
+</div>&gt; 
+<div class="quote">Backup: <a href="https://drive.google.com/drive/folders/12nQzw9DaGgBLN5OO3CQUFeLldna_bCuw?usp=sharing">https://drive.google.com/drive/folders/12nQzw9DaGgBLN5OO3CQUFeLldna_bCuw?usp=sharing</a></div></span>
+
+                                <span class="chatlog__edited-timestamp" title="17-Oct-21 11:08 AM">(edited)</span>
+                        </div>
+                    </div>
+
+                    <div class="chatlog__attachment " onclick="">
+
+                            <a href="https://cdn.discordapp.com/attachments/834308167017168926/847735822248574996/unknown.png">
+                                <img class="chatlog__attachment-media" src="https://cdn.discordapp.com/attachments/834308167017168926/847735822248574996/unknown.png" alt="Image attachment" title="Image: unknown.png (5,17 KB)" loading="lazy">
+                            </a>
+                    </div>
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="STONKS">
+                                <img class="emoji emoji--small" alt="STONKS" src="https://cdn.discordapp.com/emojis/804933843089489921.png" loading="lazy">
+                                <span class="chatlog__reaction-count">3</span>
+                            </div>
+                            <div class="chatlog__reaction" title="fire">
+                                <img class="emoji emoji--small" alt="&#128293;" src="https://twemoji.maxcdn.com/2/svg/1f525.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">2</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/396936659696091138/ce9193802c36e54f7e18abca278cb960.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="Xavy#1083" data-user-id="396936659696091138" style="color: rgb(209,69,97)">Xavy</span>
+
+
+        <span class="chatlog__timestamp">01-Jun-21 08:39 PM</span>
+
+            <div class="chatlog__message " data-message-id="849303735427530774" id="message-849303735427530774" title="Message sent: 01-Jun-21 08:39 PM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><div class="quote"><img loading="lazy" class="emoji " alt="MEGA" title="MEGA" src="https://cdn.discordapp.com/emojis/775441503937101884.png">  <strong>[Alpha 10]</strong> Collection from Megadrive contributors
+<em>(including 50TB Movies, 150TB TV-Shows and much more)</em>
+<em>(the link will be updated whenever it gets taken down)</em>
+</div>&gt; 
+<div class="quote"><a href="https://mega.nz/folder/uJJlUCoB#m2U-nOlX0WtifAXSO4KuFw">https://mega.nz/folder/uJJlUCoB#m2U-nOlX0WtifAXSO4KuFw</a></div></span>
+
+                        </div>
+                    </div>
+
+                    <div class="chatlog__attachment " onclick="">
+
+                            <a href="https://cdn.discordapp.com/attachments/834308167017168926/849303735813275719/unknown.png">
+                                <img class="chatlog__attachment-media" src="https://cdn.discordapp.com/attachments/834308167017168926/849303735813275719/unknown.png" alt="Image attachment" title="Image: unknown.png (17,73 KB)" loading="lazy">
+                            </a>
+                    </div>
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="turkeyKnife">
+                                <img class="emoji emoji--small" alt="turkeyKnife" src="https://cdn.discordapp.com/emojis/781580317710221355.png" loading="lazy">
+                                <span class="chatlog__reaction-count">6</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/396936659696091138/ce9193802c36e54f7e18abca278cb960.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="Xavy#1083" data-user-id="396936659696091138" style="color: rgb(209,69,97)">Xavy</span>
+
+
+        <span class="chatlog__timestamp">02-Jun-21 08:10 AM</span>
+
+            <div class="chatlog__message " data-message-id="849477612787073064" id="message-849477612787073064" title="Message sent: 02-Jun-21 08:10 AM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><div class="quote"><img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png"> <strong>[Alpha 11]</strong> Anime Collection
+<em>(from darkrising Mega collection)</em>
+</div>&gt; 
+<div class="quote"><a href="https://drive.google.com/drive/folders/1_OiMLX2aYEdmwmGhAtUZhCdeJt2U9NUJ?usp=sharing">https://drive.google.com/drive/folders/1_OiMLX2aYEdmwmGhAtUZhCdeJt2U9NUJ?usp=sharing</a>
+</div>&gt; 
+<div class="quote">Backup: <a href="https://drive.google.com/drive/folders/1DRAc97P2jiw_rIwk-oOQHyjfd5VKjxFk?usp=sharing">https://drive.google.com/drive/folders/1DRAc97P2jiw_rIwk-oOQHyjfd5VKjxFk?usp=sharing</a></div></span>
+
+                                <span class="chatlog__edited-timestamp" title="17-Oct-21 10:55 AM">(edited)</span>
+                        </div>
+                    </div>
+
+                    <div class="chatlog__attachment " onclick="">
+
+                            <a href="https://cdn.discordapp.com/attachments/834308167017168926/849477612849201162/unknown.png">
+                                <img class="chatlog__attachment-media" src="https://cdn.discordapp.com/attachments/834308167017168926/849477612849201162/unknown.png" alt="Image attachment" title="Image: unknown.png (4,23 KB)" loading="lazy">
+                            </a>
+                    </div>
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="thumbsup">
+                                <img class="emoji emoji--small" alt="&#128077;" src="https://twemoji.maxcdn.com/2/svg/1f44d.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                    </div>
+            </div>
+            <div class="chatlog__message " data-message-id="849478930817482802" id="message-849478930817482802" title="Message sent: 02-Jun-21 08:15 AM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><div class="quote"><img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png"> <strong>[Alpha 12]</strong> Christmas Share
+</div>&gt; 
+<div class="quote"><a href="https://drive.google.com/drive/folders/10xzX08KJEACHUJKU5raRaDJcGQnh7F-n?usp=sharing">https://drive.google.com/drive/folders/10xzX08KJEACHUJKU5raRaDJcGQnh7F-n?usp=sharing</a>
+</div>&gt; 
+<div class="quote">Backup: <a href="https://drive.google.com/drive/folders/1GAdCktWy3JZdDwED6AzmgGpk-4BikUjk?usp=sharing">https://drive.google.com/drive/folders/1GAdCktWy3JZdDwED6AzmgGpk-4BikUjk?usp=sharing</a></div></span>
+
+                                <span class="chatlog__edited-timestamp" title="17-Oct-21 10:55 AM">(edited)</span>
+                        </div>
+                    </div>
+
+                    <div class="chatlog__attachment " onclick="">
+
+                            <a href="https://cdn.discordapp.com/attachments/834308167017168926/849478931010027530/unknown.png">
+                                <img class="chatlog__attachment-media" src="https://cdn.discordapp.com/attachments/834308167017168926/849478931010027530/unknown.png" alt="Image attachment" title="Image: unknown.png (4,45 KB)" loading="lazy">
+                            </a>
+                    </div>
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="star">
+                                <img class="emoji emoji--small" alt="⭐" src="https://twemoji.maxcdn.com/2/svg/2b50.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                    </div>
+            </div>
+            <div class="chatlog__message " data-message-id="849480619230887966" id="message-849480619230887966" title="Message sent: 02-Jun-21 08:22 AM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><div class="quote"><img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png"> <strong>[Alpha 13]</strong> TEEVEE TV-Show Collection
+<em>(from <span class="mention" title="JahsehXOXO#2378">@JahsehXOXO</span> Mega collection)</em>
+</div>&gt; 
+<div class="quote"><a href="https://drive.google.com/drive/folders/1Lbx5yzjjOn8g3RXUPIuq8ZNMwpAldrce?usp=sharing">https://drive.google.com/drive/folders/1Lbx5yzjjOn8g3RXUPIuq8ZNMwpAldrce?usp=sharing</a>
+</div>&gt; 
+<div class="quote">Backup: <a href="https://drive.google.com/drive/folders/1euYt66HK_TyzKgUASqzDjEbx6QJI913o?usp=sharing">https://drive.google.com/drive/folders/1euYt66HK_TyzKgUASqzDjEbx6QJI913o?usp=sharing</a></div></span>
+
+                                <span class="chatlog__edited-timestamp" title="17-Oct-21 10:56 AM">(edited)</span>
+                        </div>
+                    </div>
+
+                    <div class="chatlog__attachment " onclick="">
+
+                            <a href="https://cdn.discordapp.com/attachments/834308167017168926/849480619309924422/unknown.png">
+                                <img class="chatlog__attachment-media" src="https://cdn.discordapp.com/attachments/834308167017168926/849480619309924422/unknown.png" alt="Image attachment" title="Image: unknown.png (4,61 KB)" loading="lazy">
+                            </a>
+                    </div>
+
+
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/396936659696091138/ce9193802c36e54f7e18abca278cb960.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="Xavy#1083" data-user-id="396936659696091138" style="color: rgb(209,69,97)">Xavy</span>
+
+
+        <span class="chatlog__timestamp">03-Jun-21 01:23 PM</span>
+
+            <div class="chatlog__message " data-message-id="849918611887489044" id="message-849918611887489044" title="Message sent: 03-Jun-21 01:23 PM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><div class="quote"><img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png"> <strong>[Alpha 14]</strong> Cartoon Archives
+<em>(from <span class="mention" title="mando-calrison#4233">@Mando the Guardian</span> Mega collection)</em>
+</div>&gt; 
+<div class="quote"><a href="https://drive.google.com/drive/folders/1CmTck0igfGKNb7YdqLkSXrMHtWQiPC1w?usp=sharing">https://drive.google.com/drive/folders/1CmTck0igfGKNb7YdqLkSXrMHtWQiPC1w?usp=sharing</a>
+</div>&gt; 
+<div class="quote">Backup: <a href="https://drive.google.com/drive/folders/1365KJHcNhI5VVH7gaVDJ77dT1khlIIgq?usp=sharing">https://drive.google.com/drive/folders/1365KJHcNhI5VVH7gaVDJ77dT1khlIIgq?usp=sharing</a></div></span>
+
+                                <span class="chatlog__edited-timestamp" title="17-Oct-21 10:57 AM">(edited)</span>
+                        </div>
+                    </div>
+
+                    <div class="chatlog__attachment " onclick="">
+
+                            <a href="https://cdn.discordapp.com/attachments/834308167017168926/849918611983433758/unknown.png">
+                                <img class="chatlog__attachment-media" src="https://cdn.discordapp.com/attachments/834308167017168926/849918611983433758/unknown.png" alt="Image attachment" title="Image: unknown.png (4,13 KB)" loading="lazy">
+                            </a>
+                    </div>
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="star">
+                                <img class="emoji emoji--small" alt="⭐" src="https://twemoji.maxcdn.com/2/svg/2b50.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">3</span>
+                            </div>
+                            <div class="chatlog__reaction" title="heart">
+                                <img class="emoji emoji--small" alt="❤️" src="https://twemoji.maxcdn.com/2/svg/2764.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                            <div class="chatlog__reaction" title="clap">
+                                <img class="emoji emoji--small" alt="&#128079;" src="https://twemoji.maxcdn.com/2/svg/1f44f.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                            <div class="chatlog__reaction" title="thumbsup">
+                                <img class="emoji emoji--small" alt="&#128077;" src="https://twemoji.maxcdn.com/2/svg/1f44d.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/396936659696091138/ce9193802c36e54f7e18abca278cb960.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="Xavy#1083" data-user-id="396936659696091138" style="color: rgb(209,69,97)">Xavy</span>
+
+
+        <span class="chatlog__timestamp">03-Jun-21 02:30 PM</span>
+
+            <div class="chatlog__message " data-message-id="849935454903730177" id="message-849935454903730177" title="Message sent: 03-Jun-21 02:30 PM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><div class="quote"><img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png"> <strong>[Alpha 15]</strong> A Music Library
+<em>(from <span class="mention" title="Crimson#5249">@Omlette</span> Mega collection)</em>
+</div>&gt; 
+<div class="quote"><a href="https://drive.google.com/drive/folders/1MKslM2czy7RWSrI2EYXT1fRmmXW076pM?usp=sharing">https://drive.google.com/drive/folders/1MKslM2czy7RWSrI2EYXT1fRmmXW076pM?usp=sharing</a>
+</div>&gt; 
+<div class="quote">Backup: <a href="https://drive.google.com/drive/folders/12fiOlUAFFXflRLVqsAN0QJEd7Gp6VjEm?usp=sharing">https://drive.google.com/drive/folders/12fiOlUAFFXflRLVqsAN0QJEd7Gp6VjEm?usp=sharing</a></div></span>
+
+                                <span class="chatlog__edited-timestamp" title="17-Oct-21 10:57 AM">(edited)</span>
+                        </div>
+                    </div>
+
+                    <div class="chatlog__attachment " onclick="">
+
+                            <a href="https://cdn.discordapp.com/attachments/834308167017168926/849935455041880124/unknown.png">
+                                <img class="chatlog__attachment-media" src="https://cdn.discordapp.com/attachments/834308167017168926/849935455041880124/unknown.png" alt="Image attachment" title="Image: unknown.png (4,51 KB)" loading="lazy">
+                            </a>
+                    </div>
+
+
+            </div>
+            <div class="chatlog__message " data-message-id="849936275350749224" id="message-849936275350749224" title="Message sent: 03-Jun-21 02:33 PM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><div class="quote"><img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png"> <strong>[Alpha 16]</strong> Officially Translated Light Novels Collection
+<em>(from <span class="mention" title="Panthaura#4124">@Panthaura</span> Mega collection)</em>
+</div>&gt; 
+<div class="quote"><a href="https://drive.google.com/drive/folders/1Mi9KovaxHXX_R0TuPFYnmf4S9cSZkywp?usp=sharing">https://drive.google.com/drive/folders/1Mi9KovaxHXX_R0TuPFYnmf4S9cSZkywp?usp=sharing</a>
+</div>&gt; 
+<div class="quote">Backup: <a href="https://drive.google.com/drive/folders/1JLA6EN2rVMxyi3sqvO0jNaLc1j7cMvsF?usp=sharing">https://drive.google.com/drive/folders/1JLA6EN2rVMxyi3sqvO0jNaLc1j7cMvsF?usp=sharing</a></div></span>
+
+                                <span class="chatlog__edited-timestamp" title="17-Oct-21 10:58 AM">(edited)</span>
+                        </div>
+                    </div>
+
+                    <div class="chatlog__attachment " onclick="">
+
+                            <a href="https://cdn.discordapp.com/attachments/834308167017168926/849936275381157938/unknown.png">
+                                <img class="chatlog__attachment-media" src="https://cdn.discordapp.com/attachments/834308167017168926/849936275381157938/unknown.png" alt="Image attachment" title="Image: unknown.png (4,49 KB)" loading="lazy">
+                            </a>
+                    </div>
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="fire">
+                                <img class="emoji emoji--small" alt="&#128293;" src="https://twemoji.maxcdn.com/2/svg/1f525.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">2</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/396936659696091138/ce9193802c36e54f7e18abca278cb960.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="Xavy#1083" data-user-id="396936659696091138" style="color: rgb(209,69,97)">Xavy</span>
+
+
+        <span class="chatlog__timestamp">14-Jun-21 07:13 PM</span>
+
+            <div class="chatlog__message " data-message-id="853993024596869151" id="message-853993024596869151" title="Message sent: 14-Jun-21 07:13 PM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><div class="quote"><img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png"> <strong>[Alpha 16]</strong> Course Collection <em><strong>(exclusive)</strong></em>
+</div>&gt; 
+<div class="quote"><a href="https://drive.google.com/drive/folders/1-8BT67f6DNPASgw1BOhtKYm-j4tGerAQ?usp=sharing">https://drive.google.com/drive/folders/1-8BT67f6DNPASgw1BOhtKYm-j4tGerAQ?usp=sharing</a>
+</div>&gt; 
+<div class="quote">Backup: <a href="https://drive.google.com/drive/folders/1E11TMsJIFeRoF3_w_AhkZjH4AVGLGAnA?usp=sharing">https://drive.google.com/drive/folders/1E11TMsJIFeRoF3_w_AhkZjH4AVGLGAnA?usp=sharing</a></div></span>
+
+                                <span class="chatlog__edited-timestamp" title="17-Oct-21 11:02 AM">(edited)</span>
+                        </div>
+                    </div>
+
+                    <div class="chatlog__attachment " onclick="">
+
+                            <a href="https://cdn.discordapp.com/attachments/834308167017168926/853993024950108170/unknown.png">
+                                <img class="chatlog__attachment-media" src="https://cdn.discordapp.com/attachments/834308167017168926/853993024950108170/unknown.png" alt="Image attachment" title="Image: unknown.png (4,22 KB)" loading="lazy">
+                            </a>
+                    </div>
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="thumbsup">
+                                <img class="emoji emoji--small" alt="&#128077;" src="https://twemoji.maxcdn.com/2/svg/1f44d.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">2</span>
+                            </div>
+                            <div class="chatlog__reaction" title="fire">
+                                <img class="emoji emoji--small" alt="&#128293;" src="https://twemoji.maxcdn.com/2/svg/1f525.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                            <div class="chatlog__reaction" title="star">
+                                <img class="emoji emoji--small" alt="⭐" src="https://twemoji.maxcdn.com/2/svg/2b50.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                            <div class="chatlog__reaction" title="tada">
+                                <img class="emoji emoji--small" alt="&#127881;" src="https://twemoji.maxcdn.com/2/svg/1f389.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">2</span>
+                            </div>
+                            <div class="chatlog__reaction" title="100">
+                                <img class="emoji emoji--small" alt="&#128175;" src="https://twemoji.maxcdn.com/2/svg/1f4af.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">2</span>
+                            </div>
+                            <div class="chatlog__reaction" title="heart_eyes">
+                                <img class="emoji emoji--small" alt="&#128525;" src="https://twemoji.maxcdn.com/2/svg/1f60d.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                            <div class="chatlog__reaction" title="heart">
+                                <img class="emoji emoji--small" alt="❤️" src="https://twemoji.maxcdn.com/2/svg/2764.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                            <div class="chatlog__reaction" title="clap">
+                                <img class="emoji emoji--small" alt="&#128079;" src="https://twemoji.maxcdn.com/2/svg/1f44f.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                            <div class="chatlog__reaction" title="pepeOK">
+                                <img class="emoji emoji--small" alt="pepeOK" src="https://cdn.discordapp.com/emojis/832026106671923210.png" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                            <div class="chatlog__reaction" title="poggers">
+                                <img class="emoji emoji--small" alt="poggers" src="https://cdn.discordapp.com/emojis/758109004856557588.png" loading="lazy">
+                                <span class="chatlog__reaction-count">2</span>
+                            </div>
+                            <div class="chatlog__reaction" title="woke">
+                                <img class="emoji emoji--small" alt="woke" src="https://cdn.discordapp.com/emojis/766319297558609990.png" loading="lazy">
+                                <span class="chatlog__reaction-count">2</span>
+                            </div>
+                            <div class="chatlog__reaction" title="windowsUpgrade">
+                                <img class="emoji emoji--small" alt="windowsUpgrade" src="https://cdn.discordapp.com/emojis/778481449421635614.png" loading="lazy">
+                                <span class="chatlog__reaction-count">2</span>
+                            </div>
+                            <div class="chatlog__reaction" title="WINRAR">
+                                <img class="emoji emoji--small" alt="WINRAR" src="https://cdn.discordapp.com/emojis/779129281875410994.png" loading="lazy">
+                                <span class="chatlog__reaction-count">2</span>
+                            </div>
+                    </div>
+            </div>
+            <div class="chatlog__message " data-message-id="853994336345915422" id="message-853994336345915422" title="Message sent: 14-Jun-21 07:18 PM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><div class="quote"><img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png"> <strong>[Alpha 17]</strong> Game Collection <em><strong>(exclusive)</strong></em>
+</div>&gt; 
+<div class="quote"><a href="https://drive.google.com/drive/folders/1-7aJnisD1UDZbgBlcvQm1VU24agYd-Be?usp=sharing">https://drive.google.com/drive/folders/1-7aJnisD1UDZbgBlcvQm1VU24agYd-Be?usp=sharing</a>
+</div>&gt; 
+<div class="quote">Backup: <a href="https://drive.google.com/drive/folders/1RD5BpghYUJ2Yjj1IWJqXbIxQcIy0zLce?usp=sharing">https://drive.google.com/drive/folders/1RD5BpghYUJ2Yjj1IWJqXbIxQcIy0zLce?usp=sharing</a></div></span>
+
+                                <span class="chatlog__edited-timestamp" title="17-Oct-21 11:03 AM">(edited)</span>
+                        </div>
+                    </div>
+
+                    <div class="chatlog__attachment " onclick="">
+
+                            <a href="https://cdn.discordapp.com/attachments/834308167017168926/853994336404242452/unknown.png">
+                                <img class="chatlog__attachment-media" src="https://cdn.discordapp.com/attachments/834308167017168926/853994336404242452/unknown.png" alt="Image attachment" title="Image: unknown.png (4,17 KB)" loading="lazy">
+                            </a>
+                    </div>
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="thumbsup">
+                                <img class="emoji emoji--small" alt="&#128077;" src="https://twemoji.maxcdn.com/2/svg/1f44d.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">3</span>
+                            </div>
+                            <div class="chatlog__reaction" title="fire">
+                                <img class="emoji emoji--small" alt="&#128293;" src="https://twemoji.maxcdn.com/2/svg/1f525.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                    </div>
+            </div>
+            <div class="chatlog__message " data-message-id="853994801828855818" id="message-853994801828855818" title="Message sent: 14-Jun-21 07:20 PM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><div class="quote"><img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png"> <strong>[Alpha 18]</strong> Movie Collection <em><strong>(exclusive)</strong></em>
+</div>&gt; 
+<div class="quote"><a href="https://drive.google.com/drive/folders/1-5tRClQAKbp6HKMUAurNIHgxR0GKPaE3?usp=sharing">https://drive.google.com/drive/folders/1-5tRClQAKbp6HKMUAurNIHgxR0GKPaE3?usp=sharing</a>
+</div>&gt; 
+<div class="quote">Backup: <a href="https://drive.google.com/drive/folders/17qXX7CweX7jd5x-CVwakcoUX9wvTdZ5P?usp=sharing">https://drive.google.com/drive/folders/17qXX7CweX7jd5x-CVwakcoUX9wvTdZ5P?usp=sharing</a></div></span>
+
+                                <span class="chatlog__edited-timestamp" title="17-Oct-21 11:03 AM">(edited)</span>
+                        </div>
+                    </div>
+
+                    <div class="chatlog__attachment " onclick="">
+
+                            <a href="https://cdn.discordapp.com/attachments/834308167017168926/853994801942757406/unknown.png">
+                                <img class="chatlog__attachment-media" src="https://cdn.discordapp.com/attachments/834308167017168926/853994801942757406/unknown.png" alt="Image attachment" title="Image: unknown.png (4,18 KB)" loading="lazy">
+                            </a>
+                    </div>
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="fire">
+                                <img class="emoji emoji--small" alt="&#128293;" src="https://twemoji.maxcdn.com/2/svg/1f525.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">4</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/396936659696091138/ce9193802c36e54f7e18abca278cb960.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="Xavy#1083" data-user-id="396936659696091138" style="color: rgb(209,69,97)">Xavy</span>
+
+
+        <span class="chatlog__timestamp">30-Jun-21 02:08 PM</span>
+
+            <div class="chatlog__message " data-message-id="859714595807428608" id="message-859714595807428608" title="Message sent: 30-Jun-21 02:08 PM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><div class="quote"><img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png"> <strong>[Alpha 19]</strong> Entertainment Drive <em><strong>(exclusive)</strong></em>
+</div>&gt; 
+<div class="quote"><a href="https://drive.google.com/drive/folders/1ZbjF1frX8rcBPGxG2Ep2mAJq5Bt7fcTN?usp=sharing">https://drive.google.com/drive/folders/1ZbjF1frX8rcBPGxG2Ep2mAJq5Bt7fcTN?usp=sharing</a>
+</div>&gt; 
+<div class="quote">Backup: <a href="https://drive.google.com/drive/folders/1qV1CDbncmBNjFKrVdGgtqBsRawKWlp6y?usp=sharing">https://drive.google.com/drive/folders/1qV1CDbncmBNjFKrVdGgtqBsRawKWlp6y?usp=sharing</a></div></span>
+
+                                <span class="chatlog__edited-timestamp" title="17-Oct-21 11:05 AM">(edited)</span>
+                        </div>
+                    </div>
+
+                    <div class="chatlog__attachment " onclick="">
+
+                            <a href="https://cdn.discordapp.com/attachments/834308167017168926/859714595853172777/unknown.png">
+                                <img class="chatlog__attachment-media" src="https://cdn.discordapp.com/attachments/834308167017168926/859714595853172777/unknown.png" alt="Image attachment" title="Image: unknown.png (4,21 KB)" loading="lazy">
+                            </a>
+                    </div>
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="star">
+                                <img class="emoji emoji--small" alt="⭐" src="https://twemoji.maxcdn.com/2/svg/2b50.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">4</span>
+                            </div>
+                            <div class="chatlog__reaction" title="fire">
+                                <img class="emoji emoji--small" alt="&#128293;" src="https://twemoji.maxcdn.com/2/svg/1f525.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">2</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/396936659696091138/ce9193802c36e54f7e18abca278cb960.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="Xavy#1083" data-user-id="396936659696091138" style="color: rgb(209,69,97)">Xavy</span>
+
+
+        <span class="chatlog__timestamp">07-Jul-21 03:36 PM</span>
+
+            <div class="chatlog__message " data-message-id="862273477560893440" id="message-862273477560893440" title="Message sent: 07-Jul-21 03:36 PM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><div class="quote"><img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png"> <strong>[Alpha 20]</strong> Huge studying stuffs from Hevy-study group <em><strong>(exclusive | updating)</strong></em>
+</div>&gt; 
+<div class="quote"><a href="https://drive.google.com/drive/folders/1zngcH_BPi6OQYCKd1bMvPgAxrMXVn84q?usp=sharing">https://drive.google.com/drive/folders/1zngcH_BPi6OQYCKd1bMvPgAxrMXVn84q?usp=sharing</a>
+</div>&gt; 
+<div class="quote">Backup: <a href="https://drive.google.com/drive/folders/1_GFz5T_fysAzLCGK4uzRSP_1ztcqhEqh?usp=sharing">https://drive.google.com/drive/folders/1_GFz5T_fysAzLCGK4uzRSP_1ztcqhEqh?usp=sharing</a></div></span>
+
+                                <span class="chatlog__edited-timestamp" title="20-Oct-21 06:52 PM">(edited)</span>
+                        </div>
+                    </div>
+
+                    <div class="chatlog__attachment " onclick="">
+
+                            <a href="https://cdn.discordapp.com/attachments/834308167017168926/862273477632589834/unknown.png">
+                                <img class="chatlog__attachment-media" src="https://cdn.discordapp.com/attachments/834308167017168926/862273477632589834/unknown.png" alt="Image attachment" title="Image: unknown.png (4,49 KB)" loading="lazy">
+                            </a>
+                    </div>
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="thumbsup">
+                                <img class="emoji emoji--small" alt="&#128077;" src="https://twemoji.maxcdn.com/2/svg/1f44d.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">6</span>
+                            </div>
+                            <div class="chatlog__reaction" title="star">
+                                <img class="emoji emoji--small" alt="⭐" src="https://twemoji.maxcdn.com/2/svg/2b50.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">2</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/396936659696091138/ce9193802c36e54f7e18abca278cb960.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="Xavy#1083" data-user-id="396936659696091138" style="color: rgb(209,69,97)">Xavy</span>
+
+
+        <span class="chatlog__timestamp">26-Jul-21 07:10 AM</span>
+
+            <div class="chatlog__message " data-message-id="869031355701399592" id="message-869031355701399592" title="Message sent: 26-Jul-21 07:10 AM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><div class="quote"><img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png"> <strong>[Alpha 21</strong> Huge ROMS Collection
+</div>&gt; 
+<div class="quote"><a href="https://drive.google.com/drive/folders/1tnUrpX5X0dTite9_m6e0T4003T_NGhWe?usp=sharing">https://drive.google.com/drive/folders/1tnUrpX5X0dTite9_m6e0T4003T_NGhWe?usp=sharing</a>
+</div>&gt; 
+<div class="quote">Backup: <a href="https://drive.google.com/drive/folders/1uY-WIm9O6glekyV9Iv0POM7C-YRzLr-7?usp=sharing">https://drive.google.com/drive/folders/1uY-WIm9O6glekyV9Iv0POM7C-YRzLr-7?usp=sharing</a></div></span>
+
+                                <span class="chatlog__edited-timestamp" title="17-Oct-21 11:07 AM">(edited)</span>
+                        </div>
+                    </div>
+
+                    <div class="chatlog__attachment " onclick="">
+
+                            <a href="https://cdn.discordapp.com/attachments/834308167017168926/869031355755921408/unknown.png">
+                                <img class="chatlog__attachment-media" src="https://cdn.discordapp.com/attachments/834308167017168926/869031355755921408/unknown.png" alt="Image attachment" title="Image: unknown.png (6,02 KB)" loading="lazy">
+                            </a>
+                    </div>
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="100">
+                                <img class="emoji emoji--small" alt="&#128175;" src="https://twemoji.maxcdn.com/2/svg/1f4af.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">11</span>
+                            </div>
+                            <div class="chatlog__reaction" title="heart">
+                                <img class="emoji emoji--small" alt="❤️" src="https://twemoji.maxcdn.com/2/svg/2764.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">9</span>
+                            </div>
+                            <div class="chatlog__reaction" title="pogChamp">
+                                <img class="emoji emoji--small" alt="pogChamp" src="https://cdn.discordapp.com/emojis/765971705759006720.png" loading="lazy">
+                                <span class="chatlog__reaction-count">6</span>
+                            </div>
+                            <div class="chatlog__reaction" title="PogU">
+                                <img class="emoji emoji--small" alt="PogU" src="https://cdn.discordapp.com/emojis/765971726097973268.png" loading="lazy">
+                                <span class="chatlog__reaction-count">7</span>
+                            </div>
+                            <div class="chatlog__reaction" title="pepePirate">
+                                <img class="emoji emoji--small" alt="pepePirate" src="https://cdn.discordapp.com/emojis/782097548533694496.png" loading="lazy">
+                                <span class="chatlog__reaction-count">7</span>
+                            </div>
+                            <div class="chatlog__reaction" title="pingShake">
+                                <img class="emoji emoji--small" alt="pingShake" src="https://cdn.discordapp.com/emojis/775440062505943040.gif" loading="lazy">
+                                <span class="chatlog__reaction-count">7</span>
+                            </div>
+                            <div class="chatlog__reaction" title="krabsbruhgif">
+                                <img class="emoji emoji--small" alt="krabsbruhgif" src="https://cdn.discordapp.com/emojis/798371989127561216.gif" loading="lazy">
+                                <span class="chatlog__reaction-count">4</span>
+                            </div>
+                            <div class="chatlog__reaction" title="FlushedChill">
+                                <img class="emoji emoji--small" alt="FlushedChill" src="https://cdn.discordapp.com/emojis/803726674629230615.png" loading="lazy">
+                                <span class="chatlog__reaction-count">4</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/396936659696091138/ce9193802c36e54f7e18abca278cb960.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="Xavy#1083" data-user-id="396936659696091138" style="color: rgb(209,69,97)">Xavy</span>
+
+
+        <span class="chatlog__timestamp">28-Jul-21 02:50 PM</span>
+
+            <div class="chatlog__message " data-message-id="869871894193639464" id="message-869871894193639464" title="Message sent: 28-Jul-21 02:50 PM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><div class="quote"><img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png"> <strong>[Alpha 22]</strong> Large Courses Collection from BytesOak group
+</div>&gt; 
+<div class="quote"><a href="https://drive.google.com/drive/folders/1302I1IOjEAXDQRq-s_2RgvHGyVWQKP8f?usp=sharing">https://drive.google.com/drive/folders/1302I1IOjEAXDQRq-s_2RgvHGyVWQKP8f?usp=sharing</a>
+</div>&gt; 
+<div class="quote">Backup: <a href="https://drive.google.com/drive/folders/1slsJl5uPn7K0JwUHd57O7wTdfouRT9uW?usp=sharing">https://drive.google.com/drive/folders/1slsJl5uPn7K0JwUHd57O7wTdfouRT9uW?usp=sharing</a></div></span>
+
+                                <span class="chatlog__edited-timestamp" title="17-Oct-21 11:04 AM">(edited)</span>
+                        </div>
+                    </div>
+
+                    <div class="chatlog__attachment " onclick="">
+
+                            <a href="https://cdn.discordapp.com/attachments/834308167017168926/869871894243975178/unknown.png">
+                                <img class="chatlog__attachment-media" src="https://cdn.discordapp.com/attachments/834308167017168926/869871894243975178/unknown.png" alt="Image attachment" title="Image: unknown.png (5,6 KB)" loading="lazy">
+                            </a>
+                    </div>
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="star">
+                                <img class="emoji emoji--small" alt="⭐" src="https://twemoji.maxcdn.com/2/svg/2b50.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">5</span>
+                            </div>
+                            <div class="chatlog__reaction" title="pepeHype">
+                                <img class="emoji emoji--small" alt="pepeHype" src="https://cdn.discordapp.com/emojis/763003163639939083.png" loading="lazy">
+                                <span class="chatlog__reaction-count">3</span>
+                            </div>
+                            <div class="chatlog__reaction" title="flushed">
+                                <img class="emoji emoji--small" alt="&#128563;" src="https://twemoji.maxcdn.com/2/svg/1f633.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">4</span>
+                            </div>
+                            <div class="chatlog__reaction" title="eyes">
+                                <img class="emoji emoji--small" alt="&#128064;" src="https://twemoji.maxcdn.com/2/svg/1f440.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">2</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/396936659696091138/ce9193802c36e54f7e18abca278cb960.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="Xavy#1083" data-user-id="396936659696091138" style="color: rgb(209,69,97)">Xavy</span>
+
+
+        <span class="chatlog__timestamp">03-Sep-21 08:34 PM</span>
+
+            <div class="chatlog__message " data-message-id="883366834122940458" id="message-883366834122940458" title="Message sent: 03-Sep-21 08:34 PM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><div class="quote"><img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png"> <strong>[Alpha 23]</strong> 4K Movies Collection <em><strong>(credit to <span class="mention" title="Red John#5819">@Red John</span> )</strong></em>
+<div class="pre pre--multiline nohighlight">Total objects: 986
+Total size: 19.468 TBytes</div>
+<a href="https://drive.google.com/drive/folders/12rFaqIFBLJnZTqqJ-qrHCBHL8clJxf27?usp=sharing">https://drive.google.com/drive/folders/12rFaqIFBLJnZTqqJ-qrHCBHL8clJxf27?usp=sharing</a>
+</div>&gt; 
+<div class="quote">Backup: <a href="https://drive.google.com/drive/folders/1MFfdS5fFcGo8QYhxmqE4rWmQDrMQWqNE?usp=sharing">https://drive.google.com/drive/folders/1MFfdS5fFcGo8QYhxmqE4rWmQDrMQWqNE?usp=sharing</a></div></span>
+
+                                <span class="chatlog__edited-timestamp" title="17-Oct-21 11:09 AM">(edited)</span>
+                        </div>
+                    </div>
+
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="dogekek">
+                                <img class="emoji emoji--small" alt="dogekek" src="https://cdn.discordapp.com/emojis/763006257887051798.png" loading="lazy">
+                                <span class="chatlog__reaction-count">15</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/396936659696091138/ce9193802c36e54f7e18abca278cb960.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="Xavy#1083" data-user-id="396936659696091138" style="color: rgb(209,69,97)">Xavy</span>
+
+
+        <span class="chatlog__timestamp">06-Sep-21 07:10 PM</span>
+
+            <div class="chatlog__message " data-message-id="884432894913806336" id="message-884432894913806336" title="Message sent: 06-Sep-21 07:10 PM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><div class="quote"><img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png"> <strong>[Alpha 24]</strong> IMDB iso collection <em><strong>(credit to <span class="mention" title="Unknown">@Unknown</span> )</strong></em>
+<div class="pre pre--multiline nohighlight">Total objects: 180
+Total size: 6.956 TBytes</div>
+<a href="https://drive.google.com/drive/folders/1i4jtuN6hD0KfFZZTjQPmLzvOuIQz6_Kk?usp=sharing">https://drive.google.com/drive/folders/1i4jtuN6hD0KfFZZTjQPmLzvOuIQz6_Kk?usp=sharing</a>
+</div>&gt; 
+<div class="quote">Backup: <a href="https://drive.google.com/drive/folders/1L28wLmjPMPU6Oa9tZ7vFIJd1F5eKEQDo?usp=sharing">https://drive.google.com/drive/folders/1L28wLmjPMPU6Oa9tZ7vFIJd1F5eKEQDo?usp=sharing</a></div></span>
+
+                                <span class="chatlog__edited-timestamp" title="17-Oct-21 11:08 AM">(edited)</span>
+                        </div>
+                    </div>
+
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="pepeHype">
+                                <img class="emoji emoji--small" alt="pepeHype" src="https://cdn.discordapp.com/emojis/763003163639939083.png" loading="lazy">
+                                <span class="chatlog__reaction-count">5</span>
+                            </div>
+                            <div class="chatlog__reaction" title="weary">
+                                <img class="emoji emoji--small" alt="&#128553;" src="https://twemoji.maxcdn.com/2/svg/1f629.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">2</span>
+                            </div>
+                            <div class="chatlog__reaction" title="star">
+                                <img class="emoji emoji--small" alt="⭐" src="https://twemoji.maxcdn.com/2/svg/2b50.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/396936659696091138/ce9193802c36e54f7e18abca278cb960.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="Xavy#1083" data-user-id="396936659696091138" style="color: rgb(209,69,97)">Xavy</span>
+
+
+        <span class="chatlog__timestamp">08-Sep-21 08:46 AM</span>
+
+            <div class="chatlog__message " data-message-id="885000568278482956" id="message-885000568278482956" title="Message sent: 08-Sep-21 08:46 AM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><div class="quote"><img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png"> <strong>[Alpha 25]</strong> Movies REMUX Collection <em><strong>(credit to <span class="mention" title="Kush the A++er#8939">@Kush the A++er</span> )</strong></em>
+<div class="pre pre--multiline nohighlight">Total objects: 790
+Total size: 17.636 TBytes</div>
+<a href="https://drive.google.com/drive/folders/1xFkS6UUcvP_88Lb6g596GdbnV-3OsLGB?usp=sharing">https://drive.google.com/drive/folders/1xFkS6UUcvP_88Lb6g596GdbnV-3OsLGB?usp=sharing</a>
+</div>&gt; 
+<div class="quote">Backup: <a href="https://drive.google.com/drive/folders/1TQeXQYqsZxYsNhBh8ndPIdGXFlAMwfJ1?usp=sharing">https://drive.google.com/drive/folders/1TQeXQYqsZxYsNhBh8ndPIdGXFlAMwfJ1?usp=sharing</a></div></span>
+
+                                <span class="chatlog__edited-timestamp" title="17-Oct-21 11:09 AM">(edited)</span>
+                        </div>
+                    </div>
+
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="pogChamp">
+                                <img class="emoji emoji--small" alt="pogChamp" src="https://cdn.discordapp.com/emojis/765971705759006720.png" loading="lazy">
+                                <span class="chatlog__reaction-count">12</span>
+                            </div>
+                            <div class="chatlog__reaction" title="muscle">
+                                <img class="emoji emoji--small" alt="&#128170;" src="https://twemoji.maxcdn.com/2/svg/1f4aa.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">2</span>
+                            </div>
+                            <div class="chatlog__reaction" title="star">
+                                <img class="emoji emoji--small" alt="⭐" src="https://twemoji.maxcdn.com/2/svg/2b50.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/396936659696091138/ce9193802c36e54f7e18abca278cb960.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="Xavy#1083" data-user-id="396936659696091138" style="color: rgb(209,69,97)">Xavy</span>
+
+
+        <span class="chatlog__timestamp">29-Sep-21 07:07 PM</span>
+
+            <div class="chatlog__message " data-message-id="892766927712317490" id="message-892766927712317490" title="Message sent: 29-Sep-21 07:07 PM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><div class="quote"><img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png"> <strong>[Alpha 26]</strong> IT Learning Stuff <em>(from <span class="mention" title="R3KUL0US#5580">@R3KUL0US</span> Mega collection)</em>
+<div class="pre pre--multiline nohighlight">Total objects: 25926
+Total size: 831.463 GiByte (892776191467 bytes)</div>
+<a href="https://drive.google.com/drive/folders/10x7mUtJXc8FU0kMWVUEPPlBz7yu2uJ7E?usp=sharing">https://drive.google.com/drive/folders/10x7mUtJXc8FU0kMWVUEPPlBz7yu2uJ7E?usp=sharing</a>
+</div>&gt; 
+<div class="quote">Backup: <a href="https://drive.google.com/drive/folders/13LODWFRwItAMnPe_RwU93Vl_mTbb0tTd?usp=sharing">https://drive.google.com/drive/folders/13LODWFRwItAMnPe_RwU93Vl_mTbb0tTd?usp=sharing</a></div></span>
+
+                                <span class="chatlog__edited-timestamp" title="17-Oct-21 11:10 AM">(edited)</span>
+                        </div>
+                    </div>
+
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="pog">
+                                <img class="emoji emoji--small" alt="pog" src="https://cdn.discordapp.com/emojis/775444239185477633.png" loading="lazy">
+                                <span class="chatlog__reaction-count">3</span>
+                            </div>
+                            <div class="chatlog__reaction" title="updoot">
+                                <img class="emoji emoji--small" alt="updoot" src="https://cdn.discordapp.com/emojis/856924713031958548.png" loading="lazy">
+                                <span class="chatlog__reaction-count">6</span>
+                            </div>
+                            <div class="chatlog__reaction" title="pepeEZ">
+                                <img class="emoji emoji--small" alt="pepeEZ" src="https://cdn.discordapp.com/emojis/775440015530000394.png" loading="lazy">
+                                <span class="chatlog__reaction-count">2</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/396936659696091138/ce9193802c36e54f7e18abca278cb960.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="Xavy#1083" data-user-id="396936659696091138" style="color: rgb(209,69,97)">Xavy</span>
+
+
+        <span class="chatlog__timestamp">29-Sep-21 08:09 PM</span>
+
+            <div class="chatlog__message " data-message-id="892782752917753966" id="message-892782752917753966" title="Message sent: 29-Sep-21 08:09 PM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><div class="quote"><img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png"> <strong>[Alpha 27]</strong> Movies Collection from YTS Server <em>(good sorted stuff)</em>
+<div class="pre pre--multiline nohighlight">Total objects: 32367
+Total size: 35.021 TiByte (38505573705510 bytes)</div>
+<a href="https://drive.google.com/drive/folders/18JFcCjxslUXDtdrpkR67fsdpne0sJgG9?usp=sharing">https://drive.google.com/drive/folders/18JFcCjxslUXDtdrpkR67fsdpne0sJgG9?usp=sharing</a>
+</div>&gt; 
+<div class="quote">Backup: <a href="https://drive.google.com/drive/folders/1edfYGXyorzA7Gd8dLBj6PIccryn-NkWa?usp=sharing">https://drive.google.com/drive/folders/1edfYGXyorzA7Gd8dLBj6PIccryn-NkWa?usp=sharing</a></div></span>
+
+                                <span class="chatlog__edited-timestamp" title="17-Oct-21 11:10 AM">(edited)</span>
+                        </div>
+                    </div>
+
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="updoot">
+                                <img class="emoji emoji--small" alt="updoot" src="https://cdn.discordapp.com/emojis/856924713031958548.png" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                            <div class="chatlog__reaction" title="star">
+                                <img class="emoji emoji--small" alt="⭐" src="https://twemoji.maxcdn.com/2/svg/2b50.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/396936659696091138/ce9193802c36e54f7e18abca278cb960.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="Xavy#1083" data-user-id="396936659696091138" style="color: rgb(209,69,97)">Xavy</span>
+
+
+        <span class="chatlog__timestamp">05-Oct-21 09:54 PM</span>
+
+            <div class="chatlog__message " data-message-id="894983314761449542" id="message-894983314761449542" title="Message sent: 05-Oct-21 09:54 PM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><div class="quote"><img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png"> <strong>[Alpha 28]</strong> CrackCartel Audio Sample Dump <em>(from <span class="mention" title="R3KUL0US#5580">@R3KUL0US</span> Mega collection)</em>
+<div class="pre pre--multiline nohighlight">Total objects: 1915
+Total size: 400.146 GiByte (429653648944 bytes)</div>
+<a href="https://drive.google.com/drive/folders/1hAbOYWYbAQieaKznh0YKO3b9dr2IwW-4?usp=sharing">https://drive.google.com/drive/folders/1hAbOYWYbAQieaKznh0YKO3b9dr2IwW-4?usp=sharing</a>
+</div>&gt; 
+<div class="quote">Backup: <a href="https://drive.google.com/drive/folders/1PSrjbYyL_Zp_-O3KfPfIZLVY9InTNP10?usp=sharing">https://drive.google.com/drive/folders/1PSrjbYyL_Zp_-O3KfPfIZLVY9InTNP10?usp=sharing</a></div></span>
+
+                                <span class="chatlog__edited-timestamp" title="17-Oct-21 11:11 AM">(edited)</span>
+                        </div>
+                    </div>
+
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="updoot">
+                                <img class="emoji emoji--small" alt="updoot" src="https://cdn.discordapp.com/emojis/856924713031958548.png" loading="lazy">
+                                <span class="chatlog__reaction-count">4</span>
+                            </div>
+                            <div class="chatlog__reaction" title="tired_face">
+                                <img class="emoji emoji--small" alt="&#128555;" src="https://twemoji.maxcdn.com/2/svg/1f62b.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/396936659696091138/ce9193802c36e54f7e18abca278cb960.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="Xavy#1083" data-user-id="396936659696091138" style="color: rgb(209,69,97)">Xavy</span>
+
+
+        <span class="chatlog__timestamp">05-Oct-21 10:19 PM</span>
+
+            <div class="chatlog__message " data-message-id="894989566681972746" id="message-894989566681972746" title="Message sent: 05-Oct-21 10:19 PM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><div class="quote"><img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png"> <strong>[Alpha 29]</strong> 3TB of courses <em>(from <span class="mention" title="GrowAsguard#0519">@GrowAsguard</span> Mega collection)</em>
+<div class="pre pre--multiline nohighlight">Total objects: 57669
+Total size: 3.631 TiByte (3992336105373 bytes)</div>
+<a href="https://drive.google.com/drive/folders/1s-rkP-nRhoeKSj1hleEyOuhSIdhj55Yn?usp=sharing">https://drive.google.com/drive/folders/1s-rkP-nRhoeKSj1hleEyOuhSIdhj55Yn?usp=sharing</a>
+</div>&gt; 
+<div class="quote">Backup: <a href="https://drive.google.com/drive/folders/1iNL6vZf5n22aSsPlc8Bit_SZXvZ9lZOm?usp=sharing">https://drive.google.com/drive/folders/1iNL6vZf5n22aSsPlc8Bit_SZXvZ9lZOm?usp=sharing</a></div></span>
+
+                                <span class="chatlog__edited-timestamp" title="17-Oct-21 11:11 AM">(edited)</span>
+                        </div>
+                    </div>
+
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="updoot">
+                                <img class="emoji emoji--small" alt="updoot" src="https://cdn.discordapp.com/emojis/856924713031958548.png" loading="lazy">
+                                <span class="chatlog__reaction-count">8</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/396936659696091138/ce9193802c36e54f7e18abca278cb960.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="Xavy#1083" data-user-id="396936659696091138" style="color: rgb(209,69,97)">Xavy</span>
+
+
+        <span class="chatlog__timestamp">17-Oct-21 11:14 AM</span>
+
+            <div class="chatlog__message " data-message-id="899171110426411039" id="message-899171110426411039" title="Message sent: 17-Oct-21 11:14 AM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><strong>-- Almost all projects above have been backed up. Enjoy <img loading="lazy" class="emoji " alt="😉" title="wink" src="https://twemoji.maxcdn.com/2/svg/1f609.svg"> --</strong></span>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="pepeHype">
+                                <img class="emoji emoji--small" alt="pepeHype" src="https://cdn.discordapp.com/emojis/763003163639939083.png" loading="lazy">
+                                <span class="chatlog__reaction-count">8</span>
+                            </div>
+                            <div class="chatlog__reaction" title="CharizardSpinDance">
+                                <img class="emoji emoji--small" alt="CharizardSpinDance" src="https://cdn.discordapp.com/emojis/799725941018329128.gif" loading="lazy">
+                                <span class="chatlog__reaction-count">5</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+</div>
+
+<div class="postamble">
+    <div class="postamble__entry">Exported 33 message(s)</div>
+</div>
+
+</body>
+
+</html>

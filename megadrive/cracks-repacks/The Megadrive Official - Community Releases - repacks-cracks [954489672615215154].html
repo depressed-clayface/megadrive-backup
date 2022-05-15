@@ -1,0 +1,896 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Megadrive Official - repacks-cracks</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-light.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.pre--multiline').forEach(e => hljs.highlightBlock(e));
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.8.1/lottie.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.chatlog__sticker--media[data-source]').forEach(e => {
+                const imageDataUrl = e.getAttribute('data-source');
+
+                const anim = lottie.loadAnimation({
+                  container: e,
+                  renderer: 'svg',
+                  loop: true,
+                  autoplay: true,
+                  path: imageDataUrl
+                });
+
+                anim.addEventListener('data_failed', () =>
+                    e.innerHTML = '<strong>[Sticker cannot be rendered]</strong>'
+                );
+            });
+        });
+    </script>
+
+    <script>
+        function scrollToMessage(event, id) {
+            var element = document.getElementById('message-' + id);
+
+            if (element) {
+                event.preventDefault();
+
+                element.classList.add('chatlog__message--highlighted');
+
+                window.scrollTo({
+                    top: element.getBoundingClientRect().top - document.body.getBoundingClientRect().top - (window.innerHeight / 2),
+                    behavior: 'smooth'
+                });
+
+                window.setTimeout(function() {
+                    element.classList.remove('chatlog__message--highlighted');
+                }, 2000);
+            }
+        }
+
+        function showSpoiler(event, element) {
+            if (element && element.classList.contains('spoiler-text--hidden')) {
+                event.preventDefault();
+                element.classList.remove('spoiler-text--hidden');
+            }
+            if (element && element.classList.contains('chatlog__attachment--hidden')) {
+                event.preventDefault();
+                element.classList.remove('chatlog__attachment--hidden');
+            }
+        }
+    </script>
+
+    <svg style="display: none">
+        <symbol id="icon-attachment" viewBox="0 0 720 960">
+            <path fill="#f4f5fb" d="M50,935a25,25,0,0,1-25-25V50A25,25,0,0,1,50,25H519.6L695,201.32V910a25,25,0,0,1-25,25Z" />
+            <path fill="#7789c4" d="M509.21,50,670,211.63V910H50V50H509.21M530,0H50A50,50,0,0,0,0,50V910a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50h0V191Z" />
+            <path fill="#f4f5fb" d="M530,215a25,25,0,0,1-25-25V50a25,25,0,0,1,16.23-23.41L693.41,198.77A25,25,0,0,1,670,215Z" />
+            <path fill="#7789c4" d="M530,70.71,649.29,190H530V70.71M530,0a50,50,0,0,0-50,50V190a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50Z" />
+        </symbol>
+    </svg>
+</head>
+<body>
+
+<div class="preamble">
+    <div class="preamble__guild-icon-container">
+        <img class="preamble__guild-icon" src="https://cdn.discordapp.com/icons/954278342880792586/20e3116c40fec860123400d45158217e.png" alt="Guild icon" loading="lazy">
+    </div>
+    <div class="preamble__entries-container">
+        <div class="preamble__entry">The Megadrive Official</div>
+        <div class="preamble__entry">Community Releases / repacks-cracks</div>
+
+
+    </div>
+</div>
+
+<div class="chatlog">
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/954381677046673449/0184ff411a2906f10e953377d1bd9d12.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="The Megadrive Bot#8976" data-user-id="954381677046673449" style="">The Megadrive Bot</span>
+
+            <span class="chatlog__bot-tag">BOT</span>
+
+        <span class="chatlog__timestamp">19-Mar-22 07:37 AM</span>
+
+            <div class="chatlog__message chatlog__message--pinned" data-message-id="954561608246513774" id="message-954561608246513774" title="Message sent: 19-Mar-22 07:37 AM">
+
+
+                        <div class="chatlog__embed">
+                                <div class="chatlog__embed-color-pill" style="background-color: rgba(180,95,248,255)"></div>
+
+                            <div class="chatlog__embed-content-container">
+                                <div class="chatlog__embed-content">
+                                    <div class="chatlog__embed-text">
+
+
+
+                                    </div>
+
+                                </div>
+
+                                    <div class="chatlog__embed-image-container">
+                                        <a class="chatlog__embed-image-link" href="https://images-ext-1.discordapp.net/external/3BktN1KS2-AmG-9ohi-KceAkDzY56sTp1mVbpiul6g8/https/i.imgur.com/zaoGwq1.png">
+                                            <img class="chatlog__embed-image" src="https://images-ext-1.discordapp.net/external/3BktN1KS2-AmG-9ohi-KceAkDzY56sTp1mVbpiul6g8/https/i.imgur.com/zaoGwq1.png" alt="Image" loading="lazy">
+                                        </a>
+                                    </div>
+
+                                    <div class="chatlog__embed-footer">
+
+                                        <span class="chatlog__embed-footer-text">
+The official channel for The Megadrive&#39;s internal and community releases.
+The place for all our certified repackers.
+
+                                        </span>
+                                    </div>
+                            </div>
+                        </div>
+
+
+            </div>
+            <div class="chatlog__message chatlog__message--pinned" data-message-id="954561609194426419" id="message-954561609194426419" title="Message sent: 19-Mar-22 07:37 AM">
+
+
+                        <div class="chatlog__embed">
+                                <div class="chatlog__embed-color-pill" style="background-color: rgba(180,95,248,255)"></div>
+
+                            <div class="chatlog__embed-content-container">
+                                <div class="chatlog__embed-content">
+                                    <div class="chatlog__embed-text">
+
+
+                                            <div class="chatlog__embed-description">
+                                                <div class="markdown preserve-whitespace">To enable post notifications for new releases, please react with the <img loading="lazy" class="emoji " alt="🔔" title="bell" src="https://twemoji.maxcdn.com/2/svg/1f514.svg"> emote.</div>
+                                            </div>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="bell">
+                                <img class="emoji emoji--small" alt="&#128276;" src="https://twemoji.maxcdn.com/2/svg/1f514.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">8</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/embed/avatars/0.png" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="REKULOUS#0000" data-user-id="954511425462759454" style="">REKULOUS</span>
+
+            <span class="chatlog__bot-tag">BOT</span>
+
+        <span class="chatlog__timestamp">22-Mar-22 08:10 AM</span>
+
+            <div class="chatlog__message " data-message-id="955657162447806504" id="message-955657162447806504" title="Message sent: 22-Mar-22 08:10 AM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><span class="mention" style="">@&#128276; Repack Notifications</span> It&#39;s showtime
+
+<span class="pre pre--inline">Action | Anime | Fighting</span>
+<img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png">  <strong>[GDrive]</strong> NARUTO SHIPPUDEN: Ultimate Ninja Storm 4 <em>(REKULOUS Repack) + (DLC OPTIONAL)</em>
+
+<strong>DOWNLOAD:</strong> <a href="https://drive.google.com/file/d/1Aru3Kggq4nYNEfQNBRBxgMUasfOUra3r/view?usp=sharing">https://drive.google.com/file/d/1Aru3Kggq4nYNEfQNBRBxgMUasfOUra3r/view?usp=sharing</a>
+<strong>Steam:</strong> <a href="https://store.steampowered.com/app/349040/NARUTO_SHIPPUDEN_Ultimate_Ninja_STORM_4/">https://store.steampowered.com/app/349040/NARUTO_SHIPPUDEN_Ultimate_Ninja_STORM_4/</a>
+
+<em>Notes:</em>
+- Based on CODEX release
+- Repack includes all DLC optional
+- Repack size around 40GB
+- Took too long to make this because of my shitty PC
+
+<strong>To thank my posts and uploads here, react to me with emojis, and most importantly, a STAR</strong> ⭐
+
+This is the last repack I made and there will probably be no more repacks for a long time, thanks for everyone who supported me, and helped me.</span>
+
+                        </div>
+                    </div>
+
+
+                        <div class="chatlog__embed">
+                                <div class="chatlog__embed-color-pill chatlog__embed-color-pill--default"></div>
+
+                            <div class="chatlog__embed-content-container">
+                                <div class="chatlog__embed-content">
+                                    <div class="chatlog__embed-text">
+
+                                            <div class="chatlog__embed-title">
+                                                    <a class="chatlog__embed-title-link" href="https://drive.google.com/file/d/1Aru3Kggq4nYNEfQNBRBxgMUasfOUra3r/view?usp=sharing">
+                                                        <div class="markdown preserve-whitespace">Naruto-Shippuden-Ultimate-Ninja-Storm-4-Repack_REKULOUS.7z</div>
+                                                    </a>
+                                            </div>
+
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="chatlog__embed">
+                                <div class="chatlog__embed-color-pill chatlog__embed-color-pill--default"></div>
+
+                            <div class="chatlog__embed-content-container">
+                                <div class="chatlog__embed-content">
+                                    <div class="chatlog__embed-text">
+
+                                            <div class="chatlog__embed-title">
+                                                    <a class="chatlog__embed-title-link" href="https://store.steampowered.com/app/349040/NARUTO_SHIPPUDEN_Ultimate_Ninja_STORM_4/">
+                                                        <div class="markdown preserve-whitespace">NARUTO SHIPPUDEN: Ultimate Ninja STORM 4</div>
+                                                    </a>
+                                            </div>
+
+                                            <div class="chatlog__embed-description">
+                                                <div class="markdown preserve-whitespace">The latest opus in the acclaimed STORM series is taking you on a colourful and breathtaking ride. Take advantage of the totally revamped battle system and prepare to dive into the most epic fights you’ve ever seen in the NARUTO SHIPPUDEN: Ultimate Ninja STORM series!Prepare for the most awaited STORM game ever created!</div>
+                                            </div>
+
+                                            <div class="chatlog__embed-fields">
+                                                    <div class="chatlog__embed-field chatlog__embed-field--inline">
+                                                            <div class="chatlog__embed-field-name">
+                                                                <div class="markdown preserve-whitespace">Price</div>
+                                                            </div>
+
+                                                            <div class="chatlog__embed-field-value">
+                                                                <div class="markdown preserve-whitespace">$29.99</div>
+                                                            </div>
+                                                    </div>
+                                                    <div class="chatlog__embed-field chatlog__embed-field--inline">
+                                                            <div class="chatlog__embed-field-name">
+                                                                <div class="markdown preserve-whitespace">Recommendations</div>
+                                                            </div>
+
+                                                            <div class="chatlog__embed-field-value">
+                                                                <div class="markdown preserve-whitespace">52226</div>
+                                                            </div>
+                                                    </div>
+                                            </div>
+                                    </div>
+
+                                        <div class="chatlog__embed-thumbnail-container">
+                                            <a class="chatlog__embed-thumbnail-link" href="https://images-ext-2.discordapp.net/external/9YzBD3BPeQ2CgFO_K0agTFwk81jBauIFSsR0Ks8i5XE/%3Ft%3D1611701005/https/cdn.akamai.steamstatic.com/steam/apps/349040/header.jpg">
+                                                <img class="chatlog__embed-thumbnail" src="https://images-ext-2.discordapp.net/external/9YzBD3BPeQ2CgFO_K0agTFwk81jBauIFSsR0Ks8i5XE/%3Ft%3D1611701005/https/cdn.akamai.steamstatic.com/steam/apps/349040/header.jpg" alt="Thumbnail" loading="lazy">
+                                            </a>
+                                        </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="star">
+                                <img class="emoji emoji--small" alt="⭐" src="https://twemoji.maxcdn.com/2/svg/2b50.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/embed/avatars/0.png" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="REKULOUS.#0000" data-user-id="954511425462759454" style="">REKULOUS.</span>
+
+            <span class="chatlog__bot-tag">BOT</span>
+
+        <span class="chatlog__timestamp">22-Mar-22 08:10 AM</span>
+
+            <div class="chatlog__message " data-message-id="955657165857767434" id="message-955657165857767434" title="Message sent: 22-Mar-22 08:10 AM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><span class="pre pre--inline">RPG | Adventure</span>
+<img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png"> <strong>[GDrive]</strong> Undertale <em>(Repack by <span class="mention" title="Unknown">@Unknown</span> and the REKULOUS Team)</em>
+
+<strong>Download:</strong> <a href="https://drive.google.com/file/d/1i1aLoC9yqSugmukY-LjSJPja52-vGfMc/view?usp=sharing">https://drive.google.com/file/d/1i1aLoC9yqSugmukY-LjSJPja52-vGfMc/view?usp=sharing</a>
+<strong>Steam:</strong> <a href="https://store.steampowered.com/app/391540/Undertale/">https://store.steampowered.com/app/391540/Undertale/</a>
+
+<em>Notes:</em>
+- Repack based on GOG release
+- This release was made by MineRocker &amp; the REKULOUS Repack Team
+- Installer is different from my other installers since this is based on ASIS
+- Among Us themed stuff in the installer for some reason
+- Repack size is around 500MB or 300MB from what I remember?
+
+<strong>To thank my posts and uploads here, react to me with emojis, and most importantly, a STAR</strong> ⭐</span>
+
+                        </div>
+                    </div>
+
+
+                        <div class="chatlog__embed">
+                                <div class="chatlog__embed-color-pill chatlog__embed-color-pill--default"></div>
+
+                            <div class="chatlog__embed-content-container">
+                                <div class="chatlog__embed-content">
+                                    <div class="chatlog__embed-text">
+
+                                            <div class="chatlog__embed-title">
+                                                    <a class="chatlog__embed-title-link" href="https://drive.google.com/file/d/1i1aLoC9yqSugmukY-LjSJPja52-vGfMc/view?usp=sharing">
+                                                        <div class="markdown preserve-whitespace">Undertale_REKTEAM.7z</div>
+                                                    </a>
+                                            </div>
+
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="chatlog__embed">
+                                <div class="chatlog__embed-color-pill chatlog__embed-color-pill--default"></div>
+
+                            <div class="chatlog__embed-content-container">
+                                <div class="chatlog__embed-content">
+                                    <div class="chatlog__embed-text">
+
+                                            <div class="chatlog__embed-title">
+                                                    <a class="chatlog__embed-title-link" href="https://store.steampowered.com/app/391540/Undertale/">
+                                                        <div class="markdown preserve-whitespace">Undertale</div>
+                                                    </a>
+                                            </div>
+
+                                            <div class="chatlog__embed-description">
+                                                <div class="markdown preserve-whitespace">Welcome to UNDERTALE. In this RPG, you control a human who falls underground into the world of monsters. Now you must find your way out... or stay trapped forever. ((Healthy Dog&#39;s Warning: Game contains imagery that may be harmful to players with photosensitive epilepsy or similar condition.))features: Killing is unnecessary: negotiate out of da...</div>
+                                            </div>
+
+                                            <div class="chatlog__embed-fields">
+                                                    <div class="chatlog__embed-field chatlog__embed-field--inline">
+                                                            <div class="chatlog__embed-field-name">
+                                                                <div class="markdown preserve-whitespace">Price</div>
+                                                            </div>
+
+                                                            <div class="chatlog__embed-field-value">
+                                                                <div class="markdown preserve-whitespace">$14.50</div>
+                                                            </div>
+                                                    </div>
+                                                    <div class="chatlog__embed-field chatlog__embed-field--inline">
+                                                            <div class="chatlog__embed-field-name">
+                                                                <div class="markdown preserve-whitespace">Recommendations</div>
+                                                            </div>
+
+                                                            <div class="chatlog__embed-field-value">
+                                                                <div class="markdown preserve-whitespace">154173</div>
+                                                            </div>
+                                                    </div>
+                                                    <div class="chatlog__embed-field chatlog__embed-field--inline">
+                                                            <div class="chatlog__embed-field-name">
+                                                                <div class="markdown preserve-whitespace">Metacritic</div>
+                                                            </div>
+
+                                                            <div class="chatlog__embed-field-value">
+                                                                <div class="markdown preserve-whitespace">92</div>
+                                                            </div>
+                                                    </div>
+                                            </div>
+                                    </div>
+
+                                        <div class="chatlog__embed-thumbnail-container">
+                                            <a class="chatlog__embed-thumbnail-link" href="https://images-ext-1.discordapp.net/external/LMQ7z3_khkfuXsc65Da9mP9QKRsDEmq84S0kpUC8rr4/%3Ft%3D1579096091/https/cdn.akamai.steamstatic.com/steam/apps/391540/header.jpg">
+                                                <img class="chatlog__embed-thumbnail" src="https://images-ext-1.discordapp.net/external/LMQ7z3_khkfuXsc65Da9mP9QKRsDEmq84S0kpUC8rr4/%3Ft%3D1579096091/https/cdn.akamai.steamstatic.com/steam/apps/391540/header.jpg" alt="Thumbnail" loading="lazy">
+                                            </a>
+                                        </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="star">
+                                <img class="emoji emoji--small" alt="⭐" src="https://twemoji.maxcdn.com/2/svg/2b50.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">2</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/embed/avatars/0.png" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="John Titor#0000" data-user-id="954511425462759454" style="">John Titor</span>
+
+            <span class="chatlog__bot-tag">BOT</span>
+
+        <span class="chatlog__timestamp">22-Mar-22 08:10 AM</span>
+
+            <div class="chatlog__message " data-message-id="955657169653604403" id="message-955657169653604403" title="Message sent: 22-Mar-22 08:10 AM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><span class="pre pre--inline">Puzzle</span>
+<img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png"> <strong>[GDrive]</strong> Superliminal-JohnTitor [Multiplayer Working]
+Download: <a href="https://drive.google.com/file/d/1h5F1vl2ZWFXPpASXZw0-ffZQSyLgP1J7">https://drive.google.com/file/d/1h5F1vl2ZWFXPpASXZw0-ffZQSyLgP1J7</a>
+SIZE: 15.5GB
+<span class="spoiler-text spoiler-text--hidden" onclick="showSpoiler(event, this)"><span class="mention" style="">@&#128276; Repack Notifications</span> </span>
+                                                                                                                                            <strong>GLORY TO JOHN TITOR</strong></span>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="star">
+                                <img class="emoji emoji--small" alt="⭐" src="https://twemoji.maxcdn.com/2/svg/2b50.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">2</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/embed/avatars/0.png" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="John Titor.#0000" data-user-id="954511425462759454" style="">John Titor.</span>
+
+            <span class="chatlog__bot-tag">BOT</span>
+
+        <span class="chatlog__timestamp">22-Mar-22 08:10 AM</span>
+
+            <div class="chatlog__message " data-message-id="955657186493726760" id="message-955657186493726760" title="Message sent: 22-Mar-22 08:10 AM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><span class="pre pre--inline">Action</span>
+<img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png"> <strong>[GDrive]</strong> Blood and Bacon-John Titor [Multiplayer Working]
+Download: <a href="https://drive.google.com/file/d/1NpDsxSTiJPROIZnagFl-y7Mkll7Abulo">https://drive.google.com/file/d/1NpDsxSTiJPROIZnagFl-y7Mkll7Abulo</a>
+SIZE: 339MB
+Online Fix by John Titor
+<span class="spoiler-text spoiler-text--hidden" onclick="showSpoiler(event, this)"> <span class="mention" style="">@&#128276; Repack Notifications</span> </span>
+                                                                                                                                            <strong>GLORY TO JOHN TITOR</strong></span>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="star">
+                                <img class="emoji emoji--small" alt="⭐" src="https://twemoji.maxcdn.com/2/svg/2b50.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/embed/avatars/0.png" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="John Titor#0000" data-user-id="954511425462759454" style="">John Titor</span>
+
+            <span class="chatlog__bot-tag">BOT</span>
+
+        <span class="chatlog__timestamp">22-Mar-22 08:10 AM</span>
+
+            <div class="chatlog__message " data-message-id="955657190079881247" id="message-955657190079881247" title="Message sent: 22-Mar-22 08:10 AM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><span class="pre pre--inline">Action</span>
+<img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png"> <strong>[GDrive]</strong> Metal Slug Collection-John Titor [Multiplayer Working]
+Download: <a href="https://drive.google.com/file/d/1SXwbagwJTwGVeAOKYEOX-isd1wiffD6A">https://drive.google.com/file/d/1SXwbagwJTwGVeAOKYEOX-isd1wiffD6A</a>
+SIZE: 1.4GB
+Online Fix by John Titor
+<span class="spoiler-text spoiler-text--hidden" onclick="showSpoiler(event, this)"> <span class="mention" style="">@&#128276; Repack Notifications</span> </span>
+                                                                                                                                            <strong>GLORY TO JOHN TITOR</strong></span>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="star">
+                                <img class="emoji emoji--small" alt="⭐" src="https://twemoji.maxcdn.com/2/svg/2b50.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/954511425462759454/a7c5e5aa71b202582848f5d9edb2f1fa.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="arcRonnie#0000" data-user-id="954511425462759454" style="">arcRonnie</span>
+
+            <span class="chatlog__bot-tag">BOT</span>
+
+        <span class="chatlog__timestamp">22-Mar-22 08:10 AM</span>
+
+            <div class="chatlog__message " data-message-id="955657205967896656" id="message-955657205967896656" title="Message sent: 22-Mar-22 08:10 AM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><span class="pre pre--inline">Survival, Wave-Based, FPS, Horror</span>
+Killing Floor Build 1074376 (+KF Bots, All Character Packs) - <strong>RONNiE</strong> [2.47GB]
+<img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png"> [<strong>Download</strong>]: <a href="https://drive.google.com/drive/folders/1y3NWwo_r2TnAIvw4MuPXybkSirx56DEG?usp=sharing">https://drive.google.com/drive/folders/1y3NWwo_r2TnAIvw4MuPXybkSirx56DEG?usp=sharing</a>
+<img loading="lazy" class="emoji " alt="steam" title="steam" src="https://cdn.discordapp.com/emojis/882164165219860481.png"> [<strong>Steam Page</strong>]: <a href="https://store.steampowered.com/app/1250/Killing_Floor/">https://store.steampowered.com/app/1250/Killing_Floor/</a>
+
+<span class="mention" style="">@&#128276; Repack Notifications</span> <img loading="lazy" class="emoji " alt="😉" title="wink" src="https://twemoji.maxcdn.com/2/svg/1f609.svg"></span>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="star">
+                                <img class="emoji emoji--small" alt="⭐" src="https://twemoji.maxcdn.com/2/svg/2b50.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/embed/avatars/0.png" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="John Titor#0000" data-user-id="954511425462759454" style="">John Titor</span>
+
+            <span class="chatlog__bot-tag">BOT</span>
+
+        <span class="chatlog__timestamp">22-Mar-22 08:10 AM</span>
+
+            <div class="chatlog__message " data-message-id="955657209545621524" id="message-955657209545621524" title="Message sent: 22-Mar-22 08:10 AM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><span class="pre pre--inline">Sandbox</span>
+<img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png"> <strong>[GDrive]</strong> Factorio-John Titor [Multiplayer Working] [01.11.2021]
+Download: <a href="https://drive.google.com/open?id=1wJ0o0D9K8H1ZLicar4OHOmE7Qt3ielPd">https://drive.google.com/open?id=1wJ0o0D9K8H1ZLicar4OHOmE7Qt3ielPd</a>
+Steam Page: <a href="https://store.steampowered.com/app/427520/Factorio/">https://store.steampowered.com/app/427520/Factorio/</a>
+SIZE: 1.4GB
+Online Fix by John Titor
+<span class="spoiler-text spoiler-text--hidden" onclick="showSpoiler(event, this)"> <span class="mention" style="">@&#128276; Repack Notifications</span> </span>
+                                                                                                                                            <strong>GLORY TO JOHN TITOR</strong></span>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="star">
+                                <img class="emoji emoji--small" alt="⭐" src="https://twemoji.maxcdn.com/2/svg/2b50.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/embed/avatars/0.png" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="John Titor.#0000" data-user-id="954511425462759454" style="">John Titor.</span>
+
+            <span class="chatlog__bot-tag">BOT</span>
+
+        <span class="chatlog__timestamp">22-Mar-22 08:10 AM</span>
+
+            <div class="chatlog__message " data-message-id="955657212636848129" id="message-955657212636848129" title="Message sent: 22-Mar-22 08:10 AM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><span class="pre pre--inline">Idle</span>
+<img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png"> <strong>[GDrive]</strong> Melvor Idle-John Titor[26.06.2021]
+Download: <a href="https://drive.google.com/file/d/1TBxZDO1a9OEI0DadaDPZ2UofPu5dA_t9">https://drive.google.com/file/d/1TBxZDO1a9OEI0DadaDPZ2UofPu5dA_t9</a>
+Steam Page: <a href="https://store.steampowered.com/app/1267910/Melvor_Idle/">https://store.steampowered.com/app/1267910/Melvor_Idle/</a>
+SIZE: 101MB
+<span class="spoiler-text spoiler-text--hidden" onclick="showSpoiler(event, this)"> <span class="mention" style="">@&#128276; Repack Notifications</span> </span>
+                                                                                                                                            <strong>GLORY TO JOHN TITOR</strong></span>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="star">
+                                <img class="emoji emoji--small" alt="⭐" src="https://twemoji.maxcdn.com/2/svg/2b50.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/954511425462759454/a7c5e5aa71b202582848f5d9edb2f1fa.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="arcRonnie#0000" data-user-id="954511425462759454" style="">arcRonnie</span>
+
+            <span class="chatlog__bot-tag">BOT</span>
+
+        <span class="chatlog__timestamp">22-Mar-22 08:10 AM</span>
+
+            <div class="chatlog__message " data-message-id="955657229325992006" id="message-955657229325992006" title="Message sent: 22-Mar-22 08:10 AM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><span class="pre pre--inline">FPS, Movement Shooter, Retro Throwback</span>
+ULTRAKILL Build 7659223 - <strong>RONNiE</strong> [1.22GB]
+<img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png"> [<strong>Download</strong>]: <a href="https://drive.google.com/drive/folders/1x_pFiMubCedXQK8BtqqCCZEUy4uk1gKc?usp=sharing">https://drive.google.com/drive/folders/1x_pFiMubCedXQK8BtqqCCZEUy4uk1gKc?usp=sharing</a>
+<img loading="lazy" class="emoji " alt="steam" title="steam" src="https://cdn.discordapp.com/emojis/882164165219860481.png"> [<strong>Steam Page</strong>]:  <a href="https://store.steampowered.com/app/1229490/ULTRAKILL/">https://store.steampowered.com/app/1229490/ULTRAKILL/</a>
+
+<span class="spoiler-text spoiler-text--hidden" onclick="showSpoiler(event, this)">Psst, take a look at this: <a href="https://artpacks.org/2021/MIST0921.ZIP/US-ULTRAKILLV1.ANS">https://artpacks.org/2021/MIST0921.ZIP/US-ULTRAKILLV1.ANS</a></span>
+<span class="mention" style="">@&#128276; Repack Notifications</span> <img loading="lazy" class="emoji " alt="😉" title="wink" src="https://twemoji.maxcdn.com/2/svg/1f609.svg"></span>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="star">
+                                <img class="emoji emoji--small" alt="⭐" src="https://twemoji.maxcdn.com/2/svg/2b50.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/embed/avatars/0.png" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="John Titor#0000" data-user-id="954511425462759454" style="">John Titor</span>
+
+            <span class="chatlog__bot-tag">BOT</span>
+
+        <span class="chatlog__timestamp">22-Mar-22 08:10 AM</span>
+
+            <div class="chatlog__message " data-message-id="955657233012785212" id="message-955657233012785212" title="Message sent: 22-Mar-22 08:10 AM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><span class="pre pre--inline">Action</span>
+<img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png"> <strong>[GDrive]</strong> Quake Live - John Titor
+Download: <a href="https://drive.google.com/open?id=1XkcwSqtpwBn-ak-TOR5a8QPfKfICwnII">https://drive.google.com/open?id=1XkcwSqtpwBn-ak-TOR5a8QPfKfICwnII</a>
+Steam Page: <a href="https://store.steampowered.com/app/282440/Quake_Live/">https://store.steampowered.com/app/282440/Quake_Live/</a>
+SIZE: 1GB
+Online Fix By John Titor
+<span class="spoiler-text spoiler-text--hidden" onclick="showSpoiler(event, this)"> <span class="mention" style="">@&#128276; Repack Notifications</span> </span>
+                                                                                                                                            <strong>GLORY TO JOHN TITOR</strong></span>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="star">
+                                <img class="emoji emoji--small" alt="⭐" src="https://twemoji.maxcdn.com/2/svg/2b50.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">1</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/954511425462759454/a7c5e5aa71b202582848f5d9edb2f1fa.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="arcRonnie#0000" data-user-id="954511425462759454" style="">arcRonnie</span>
+
+            <span class="chatlog__bot-tag">BOT</span>
+
+        <span class="chatlog__timestamp">22-Mar-22 08:10 AM</span>
+
+            <div class="chatlog__message " data-message-id="955657249605435533" id="message-955657249605435533" title="Message sent: 22-Mar-22 08:10 AM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><span class="pre pre--inline">Early Access, Sandbox, Simulation</span>
+WorldBox - God Simulator (Build 7923043) - <strong>RONNiE</strong> [40MB]
+<img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png"> [<strong>Download</strong>]: <a href="https://drive.google.com/drive/folders/146Iu5yTibxHXuwxxm89wyNeikhJwKlqB?usp=sharing">https://drive.google.com/drive/folders/146Iu5yTibxHXuwxxm89wyNeikhJwKlqB?usp=sharing</a>
+<img loading="lazy" class="emoji " alt="steam" title="steam" src="https://cdn.discordapp.com/emojis/882164165219860481.png"> [<strong>Steam Page</strong>]: <a href="https://store.steampowered.com/app/1206560/WorldBox__God_Simulator/">https://store.steampowered.com/app/1206560/WorldBox__God_Simulator/</a>
+
+<span class="mention" style="">@&#128276; Repack Notifications</span> <img loading="lazy" class="emoji " alt="😉" title="wink" src="https://twemoji.maxcdn.com/2/svg/1f609.svg"></span>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="star">
+                                <img class="emoji emoji--small" alt="⭐" src="https://twemoji.maxcdn.com/2/svg/2b50.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">4</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/954511425462759454/a7c5e5aa71b202582848f5d9edb2f1fa.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="arcRonnie.#0000" data-user-id="954511425462759454" style="">arcRonnie.</span>
+
+            <span class="chatlog__bot-tag">BOT</span>
+
+        <span class="chatlog__timestamp">22-Mar-22 08:10 AM</span>
+
+            <div class="chatlog__message " data-message-id="955657253107691571" id="message-955657253107691571" title="Message sent: 22-Mar-22 08:10 AM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace"><span class="pre pre--inline">FPS, Movement Shooter, Retro Throwback</span>
+ULTRAKILL Build 8215809 (Incl. The Saw Your Heart Update) - <strong>RONNiE</strong> [588.5MB]
+<img loading="lazy" class="emoji " alt="drive" title="drive" src="https://cdn.discordapp.com/emojis/775983365584453642.png"> [<strong>Download</strong>]: <a href="https://drive.google.com/drive/folders/1JI_OE4Us1vCmX6YLKsRM8qDujsD2Tz0A?usp=sharing">https://drive.google.com/drive/folders/1JI_OE4Us1vCmX6YLKsRM8qDujsD2Tz0A?usp=sharing</a>
+<img loading="lazy" class="emoji " alt="steam" title="steam" src="https://cdn.discordapp.com/emojis/882164165219860481.png"> [<strong>Steam Page</strong>]:  <a href="https://store.steampowered.com/app/1229490/ULTRAKILL/">https://store.steampowered.com/app/1229490/ULTRAKILL/</a>
+
+<span class="spoiler-text spoiler-text--hidden" onclick="showSpoiler(event, this)"><a href="https://youtu.be/OyGBNAje0j8">https://youtu.be/OyGBNAje0j8</a></span>
+<span class="mention" style="">@&#128276; Repack Notifications</span> <img loading="lazy" class="emoji " alt="😉" title="wink" src="https://twemoji.maxcdn.com/2/svg/1f609.svg"></span>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="chatlog__reactions">
+                            <div class="chatlog__reaction" title="star">
+                                <img class="emoji emoji--small" alt="⭐" src="https://twemoji.maxcdn.com/2/svg/2b50.svg" loading="lazy">
+                                <span class="chatlog__reaction-count">8</span>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="chatlog__message-group">
+        <div class="chatlog__reference-symbol"></div>
+        <div class="chatlog__reference">
+                <span class="chatlog__reference-unknown">
+                    Original message was deleted or could not be loaded.
+                </span>
+        </div>
+
+    <div class="chatlog__author-avatar-container">
+        <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/821866198970531871/aead8a1c2f1003c4704c234816ab74e0.png?size=128" alt="Avatar" loading="lazy">
+    </div>
+
+    <div class="chatlog__messages">
+        <span class="chatlog__author-name" title="Cyclicism#5165" data-user-id="821866198970531871" style="color: rgb(241,196,15)">Cyclicism</span>
+
+
+        <span class="chatlog__timestamp">22-Mar-22 08:11 AM</span>
+
+            <div class="chatlog__message " data-message-id="955657353548664892" id="message-955657353548664892" title="Message sent: 22-Mar-22 08:11 AM">
+                    <div class="chatlog__content">
+                        <div class="markdown">
+                            <span class="preserve-whitespace">Pinned a message.</span>
+
+                        </div>
+                    </div>
+
+
+
+
+            </div>
+    </div>
+</div>
+
+
+</div>
+
+<div class="postamble">
+    <div class="postamble__entry">Exported 15 message(s)</div>
+</div>
+
+</body>
+
+</html>
