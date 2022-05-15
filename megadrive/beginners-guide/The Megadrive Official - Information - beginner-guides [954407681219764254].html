@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Megadrive Official - beginner-guides</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width" name="viewport">
+
+    <link href="styles.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-light.min.css"
+          rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.pre--multiline').forEach(e => hljs.highlightBlock(e));
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.8.1/lottie.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.chatlog__sticker--media[data-source]').forEach(e => {
+                const imageDataUrl = e.getAttribute('data-source');
+
+                const anim = lottie.loadAnimation({
+                    container: e,
+                    renderer: 'svg',
+                    loop: true,
+                    autoplay: true,
+                    path: imageDataUrl
+                });
+
+                anim.addEventListener('data_failed', () =>
+                    e.innerHTML = '<strong>[Sticker cannot be rendered]</strong>'
+                );
+            });
+        });
+    </script>
+
+    <script>
+        function scrollToMessage(event, id) {
+            var element = document.getElementById('message-' + id);
+
+            if (element) {
+                event.preventDefault();
+
+                element.classList.add('chatlog__message--highlighted');
+
+                window.scrollTo({
+                    top: element.getBoundingClientRect().top - document.body.getBoundingClientRect().top - (window.innerHeight / 2),
+                    behavior: 'smooth'
+                });
+
+                window.setTimeout(function () {
+                    element.classList.remove('chatlog__message--highlighted');
+                }, 2000);
+            }
+        }
+
+        function showSpoiler(event, element) {
+            if (element && element.classList.contains('spoiler-text--hidden')) {
+                event.preventDefault();
+                element.classList.remove('spoiler-text--hidden');
+            }
+            if (element && element.classList.contains('chatlog__attachment--hidden')) {
+                event.preventDefault();
+                element.classList.remove('chatlog__attachment--hidden');
+            }
+        }
+    </script>
+
+    <svg style="display: none">
+        <symbol id="icon-attachment" viewBox="0 0 720 960">
+            <path d="M50,935a25,25,0,0,1-25-25V50A25,25,0,0,1,50,25H519.6L695,201.32V910a25,25,0,0,1-25,25Z"
+                  fill="#f4f5fb"/>
+            <path d="M509.21,50,670,211.63V910H50V50H509.21M530,0H50A50,50,0,0,0,0,50V910a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50h0V191Z"
+                  fill="#7789c4"/>
+            <path d="M530,215a25,25,0,0,1-25-25V50a25,25,0,0,1,16.23-23.41L693.41,198.77A25,25,0,0,1,670,215Z"
+                  fill="#f4f5fb"/>
+            <path d="M530,70.71,649.29,190H530V70.71M530,0a50,50,0,0,0-50,50V190a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50Z"
+                  fill="#7789c4"/>
+        </symbol>
+    </svg>
+</head>
+<body>
+
+<div class="preamble">
+    <div class="preamble__guild-icon-container">
+        <img alt="Guild icon" class="preamble__guild-icon" loading="lazy"
+             src="https://cdn.discordapp.com/icons/954278342880792586/20e3116c40fec860123400d45158217e.png">
+    </div>
+    <div class="preamble__entries-container">
+        <div class="preamble__entry">The Megadrive Official</div>
+        <div class="preamble__entry">Information / beginner-guides</div>
+
+
+    </div>
+</div>
+
+<div class="chatlog">
+
+
+    <div class="chatlog__message-group">
+
+        <div class="chatlog__author-avatar-container">
+            <img alt="Avatar" class="chatlog__author-avatar" loading="lazy"
+                 src="https://cdn.discordapp.com/avatars/195000583357202442/e219cb8b1027200e30166a4da54e8082.png?size=128">
+        </div>
+
+        <div class="chatlog__messages">
+            <span class="chatlog__author-name" data-user-id="195000583357202442" style="color: rgb(17,128,106)"
+                  title="Whexican#7193">Whexican</span>
+
+
+            <span class="chatlog__timestamp">20-Mar-22 06:23 PM</span>
+
+            <div class="chatlog__message " data-message-id="955086723103211531" id="message-955086723103211531"
+                 title="Message sent: 20-Mar-22 06:23 PM">
+                <div class="chatlog__content">
+                    <div class="markdown">
+                            <span class="preserve-whitespace">The following guides have been provided to help educate those new to the data archiving scene.  Please refer to these before asking for help in the forums.
+If you have a guide you would like to contribute, let the staff know.  We’ll take a look at it, and if it looks good we can add it to this channel and credit you as well.
+
+
+<u><strong>Discord Server</strong></u>
+<span class="pre pre--inline">How to use the Search Bar (Thanks to Techtechatech#1395):</span> <a
+                                        href="https://rentry.co/discord_search_tips_by_techtechatech">https://rentry.co/discord_search_tips_by_techtechatech</a>
+
+<span class="pre pre--inline">How to use the Search Bar on Mobile (Thanks to HAKUYUKI#0025):</span> <a
+                                        href="https://rentry.co/discord_search_by_haku">https://rentry.co/discord_search_by_haku</a>
+
+
+<u><strong>Torrents</strong></u>
+<span class="pre pre--inline">Basic Intro to Torrents:</span> <a
+                                        href="https://rentry.co/qogae">https://rentry.co/qogae</a>
+
+<span class="pre pre--inline">Intro to Private Torrents:</span> <a
+                                        href="https://wiki.installgentoo.com/wiki/Private_trackers">https://wiki.installgentoo.com/wiki/Private_trackers</a>
+
+<span class="pre pre--inline">Torrent to GDrive Colab Script Guide (Thanks to Sinister_Shadow#1337):</span> <a
+                                        href="https://rentry.co/TorrentColab">https://rentry.co/TorrentColab</a>
+
+
+<u><strong>File Management</strong></u>
+<span class="pre pre--inline">Rclone Guide:</span> <a href="https://www.andyibanez.com/posts/rclone-basics-encryption/">https://www.andyibanez.com/posts/rclone-basics-encryption/</a>
+
+<span class="pre pre--inline">Air Explorer Guide:</span> <a href="https://youtu.be/M_OEOsHX22o">https://youtu.be/M_OEOsHX22o</a>
+
+<span class="pre pre--inline">Mixplorer (Air Explorer on Android) Setup Guide (Thanks to Techtechatech#1395):</span> <a
+                                        href="https://rentry.co/efkdq">https://rentry.co/efkdq</a>
+
+
+<u><strong>Piracy How-To&#39;s</strong></u>
+<span class="pre pre--inline">Reddit r/Piracy Mega-thread:</span> <a
+                                        href="https://www.reddit.com/r/Piracy/wiki/megathread">https://www.reddit.com/r/Piracy/wiki/megathread</a>
+
+<span class="pre pre--inline">Various Reddit Piracy Links (Thanks to Ori#4448):</span> <a
+                                        href="https://discord.com/channels/740572537595101194/740574633463644164/879700679965413396"
+                                        onclick="scrollToMessage(event, '879700679965413396')">https://discord.com/channels/740572537595101194/740574633463644164/879700679965413396</a>
+
+<span class="pre pre--inline">Game Piracy &amp; Contribution Guide  (Thanks to REKULOUS#5580):</span> <a
+                                        href="https://rentry.co/pgames-mega-thread">https://rentry.co/pgames-mega-thread</a>
+
+<span class="pre pre--inline">Software Piracy &amp; Contribution Guide (Thanks to REKULOUS#5580):</span> <a
+                                        href="https://rentry.co/softwarepirates-megathread">https://rentry.co/softwarepirates-megathread</a>
+
+<span class="pre pre--inline">Anime Piracy Guide (Thanks to John Titor#0767):</span> <a href="https://wiki.piracy.moe/">https://wiki.piracy.moe/</a>
+
+
+<u><strong>Media Players</strong></u>
+<span class="pre pre--inline">Kodi Setup Guide:</span> <a
+                                        href="https://www.makeuseof.com/tag/set-up-use-kodi-beginners/">https://www.makeuseof.com/tag/set-up-use-kodi-beginners/</a>
+
+<span class="pre pre--inline">Adding Gdrive to Kodi:</span> <a
+                                        href="https://www.reviewsed.com/install-google-drive-on-kodi/amp/">https://www.reviewsed.com/install-google-drive-on-kodi/amp/</a>
+
+<span class="pre pre--inline">Stremio Setup Guide (Thanks to REKULOUS#5580):</span> <a
+                                        href="https://stremio.zendesk.com/hc/en-us/articles/360008931971-Getting-Started-with-Stremio-A-Quick-Video-Guide">https://stremio.zendesk.com/hc/en-us/articles/360008931971-Getting-Started-with-Stremio-A-Quick-Video-Guide</a></span>
+
+                        <span class="chatlog__edited-timestamp" title="20-Mar-22 06:26 PM">(edited)</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="postamble">
+    <div class="postamble__entry">Exported 1 message(s)</div>
+</div>
+
+</body>
+
+</html>
